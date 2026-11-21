@@ -1,0 +1,23 @@
+{
+  "run_id": "001-handoff-02",
+  "case_id": "001-handoff",
+  "plan": "plans/001-handoff.md",
+  "source_sha": "1de672a13bf798380ef2eb414a1aebc9f096c433",
+  "branch": "claude/gatling-001-handoff-02-ittju6",
+  "owner": "claude-code-remote:session_01KrZsT1g6BhcSFyna1wjCfw",
+  "status": "running",
+  "updated_at": "2026-11-21T21:19:37+08:00",
+  "conditions": {
+    "variable": "none: 02 repeats the 001 document handoff as a strict mobile no-history sample",
+    "fixed": "fixed task pending_ids, Python 3 stdlib unittest, acceptance per plans/001-handoff.md",
+    "model_or_tool": "Claude Code remote session (configured model claude-opus-5-5); details filled at delivery",
+    "environment": "claude.ai Claude Code cloud container; details filled at delivery",
+    "extra_prompt": null,
+    "prior_chat_and_platform_context": "filled at delivery",
+    "read_other_run_artifacts": "filled at delivery"
+  },
+  "evidence": [],
+  "outcome": null,
+  "human_decision": null,
+  "next_prompt": null
+}
