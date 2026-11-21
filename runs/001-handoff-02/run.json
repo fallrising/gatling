@@ -5,8 +5,8 @@
   "source_sha": "1de672a13bf798380ef2eb414a1aebc9f096c433",
   "branch": "claude/gatling-001-handoff-02-ittju6",
   "owner": "claude-code-remote:session_01KrZsT1g6BhcSFyna1wjCfw",
-  "status": "in_review",
-  "updated_at": "2026-11-21T21:21:09+08:00",
+  "status": "accepted",
+  "updated_at": "2026-11-21T22:23:39+08:00",
   "conditions": {
     "variable": "none: run 02 repeats the 001 document handoff unchanged as a strict mobile no-history sample (plans/001-handoff.md)",
     "fixed": "fixed task pending_ids(planned, done), Python 3 standard library, unittest with the four plan cases, acceptance per plans/001-handoff.md",
@@ -81,11 +81,20 @@
       "content_head": "cbc9067336f8716068a0a656b96e0c86d7bef0ec",
       "note": "the review head is the commit that sets status in_review; it is reported in the PR and delivery message because a commit cannot contain its own SHA"
     },
-    "acceptance": null
+    "acceptance": {
+      "pull_requests": [
+        {
+          "url": "https://github.com/fallrising/gatling/pull/5",
+          "head": "40e1d11b8011ac4b6f09ce4f5f4c510d59fec560",
+          "merge_commit": "4736dfbcce545602b8540b8e0e100057f5b6907f",
+          "merged_at": "2026-11-21T14:20:28Z"
+        }
+      ]
+    }
   },
   "human_decision": [
     "Accept 001-handoff-02 as a strict mobile no-history sample or not, given the listed platform context and the one-time listing of runs/001-handoff-01 file names",
     "Which handoff method experiment 001 should compare next; the plan does not specify it yet"
   ],
-  "next_prompt": "runs/001-handoff-02/next.md"
+  "next_prompt": "runs/001-handoff-02/next-after-review.md"
 }
