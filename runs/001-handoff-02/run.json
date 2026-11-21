@@ -5,8 +5,8 @@
   "source_sha": "1de672a13bf798380ef2eb414a1aebc9f096c433",
   "branch": "claude/gatling-001-handoff-02-ittju6",
   "owner": "claude-code-remote:session_01KrZsT1g6BhcSFyna1wjCfw",
-  "status": "running",
-  "updated_at": "2026-11-21T21:20:42+08:00",
+  "status": "in_review",
+  "updated_at": "2026-11-21T21:21:09+08:00",
   "conditions": {
     "variable": "none: run 02 repeats the 001 document handoff unchanged as a strict mobile no-history sample (plans/001-handoff.md)",
     "fixed": "fixed task pending_ids(planned, done), Python 3 standard library, unittest with the four plan cases, acceptance per plans/001-handoff.md",
@@ -74,7 +74,13 @@
     "completed_from_repo_and_entry_prompt_only": true,
     "needs_more_handoff_info": false,
     "strict_mobile_no_history_sample": "pending human judgment; see conditions.read_other_run_artifacts and platform_injected_context",
-    "pull_request": null,
+    "pull_request": {
+      "url": "https://github.com/fallrising/gatling/pull/5",
+      "draft": true,
+      "base": "main",
+      "content_head": "cbc9067336f8716068a0a656b96e0c86d7bef0ec",
+      "note": "the review head is the commit that sets status in_review; it is reported in the PR and delivery message because a commit cannot contain its own SHA"
+    },
     "acceptance": null
   },
   "human_decision": [
