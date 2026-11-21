@@ -1,0 +1,11 @@
+Python 3.13.18
+test_all_done (test_solution.PendingIdsTest.test_all_done) ... ok
+test_empty_planned (test_solution.PendingIdsTest.test_empty_planned) ... ok
+test_exact_case_sensitive_match (test_solution.PendingIdsTest.test_exact_case_sensitive_match) ... ok
+test_first_seen_order_dedup_and_extra_done (test_solution.PendingIdsTest.test_first_seen_order_dedup_and_extra_done) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+exit_code=0

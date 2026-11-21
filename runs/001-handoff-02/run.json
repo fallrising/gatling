@@ -6,18 +6,80 @@
   "branch": "claude/gatling-001-handoff-02-ittju6",
   "owner": "claude-code-remote:session_01KrZsT1g6BhcSFyna1wjCfw",
   "status": "running",
-  "updated_at": "2026-11-21T21:19:37+08:00",
+  "updated_at": "2026-11-21T21:20:42+08:00",
   "conditions": {
-    "variable": "none: 02 repeats the 001 document handoff as a strict mobile no-history sample",
-    "fixed": "fixed task pending_ids, Python 3 stdlib unittest, acceptance per plans/001-handoff.md",
-    "model_or_tool": "Claude Code remote session (configured model claude-opus-5-5); details filled at delivery",
-    "environment": "claude.ai Claude Code cloud container; details filled at delivery",
+    "variable": "none: run 02 repeats the 001 document handoff unchanged as a strict mobile no-history sample (plans/001-handoff.md)",
+    "fixed": "fixed task pending_ids(planned, done), Python 3 standard library, unittest with the four plan cases, acceptance per plans/001-handoff.md",
+    "entry_prompt": "prompts/NEXT.md text block, received verbatim (byte-identical cmp against the received message); no extra explanation from the user",
+    "opened_from_mobile": "yes: get_session of this Claude Code remote session reports origin \"ios\"",
+    "model_or_tool": "Claude Code remote session (container Claude Code 2.1.330); configured_model and last_served_model both claude-opus-5-5, effort high, permission mode auto",
+    "environment": "claude.ai Claude Code cloud container (anthropic_cloud), Linux, Python 3.13.18; session source only fallrising/gatling at refs/heads/main",
+    "branch_note": "platform only allows pushing claude/gatling-001-handoff-02-ittju6, so it is used instead of lab/001-handoff-02 per plan step 1; no second branch opened",
     "extra_prompt": null,
-    "prior_chat_and_platform_context": "filled at delivery",
-    "read_other_run_artifacts": "filled at delivery"
+    "extra_task_clarification": "none needed; the plan and entry prompt were sufficient",
+    "prior_chat_memory": "none observed; no earlier conversation or memory content was provided",
+    "platform_injected_context": [
+      "Claude Code system prompt with the git rule to develop and push only on claude/gatling-001-handoff-02-ittju6",
+      "AGENTS.md auto-loaded as project instructions (same file as main)",
+      "account email of the user was attached as context; not used anywhere",
+      "MCP servers configured: github (used for PR listing and Draft PR), claude-code-remote (used for get_session), Slack (connected, not used), Linear and Cloudflare (failed to connect, not used)",
+      "no other repository mounted"
+    ],
+    "read_other_run_artifacts": "partially, names only: an initial `ls -R runs` printed the file names inside runs/001-handoff-01/ (no file contents opened); `git fetch` and `git ls-remote` printed other branch names including lab/001-handoff-01 (not checked out or read); main `git log --oneline -5` showed merge subjects of PR #2-#4; PR list read titles/state/head refs only; tools/check_runs.py parsed runs/001-handoff-01/run.json and printed only `ok`. No other run's file contents, branch contents or PR bodies were read.",
+    "context_limitations": "strictness is for the human to judge: entry prompt verbatim and mobile origin confirmed, but other-run file names were listed once and platform context above was injected"
   },
-  "evidence": [],
-  "outcome": null,
-  "human_decision": null,
-  "next_prompt": null
+  "evidence": [
+    {
+      "description": "fixed task implementation and unittest cases for the four plan pairs",
+      "paths": [
+        "runs/001-handoff-02/solution.py",
+        "runs/001-handoff-02/test_solution.py"
+      ],
+      "command": null,
+      "exit_code": 0,
+      "summary": "source files; exit_code refers to the test run below"
+    },
+    {
+      "description": "unittest run from repo root",
+      "paths": [
+        "runs/001-handoff-02/test-output.txt"
+      ],
+      "command": "python3 -m unittest discover -s runs/001-handoff-02 -p 'test_*.py' -v",
+      "python": "3.13.18",
+      "exit_code": 0,
+      "summary": "Ran 4 tests, OK: test_all_done, test_empty_planned, test_exact_case_sensitive_match, test_first_seen_order_dedup_and_extra_done"
+    },
+    {
+      "description": "run record checker",
+      "paths": [
+        "tools/check_runs.py"
+      ],
+      "command": "python3 tools/check_runs.py",
+      "exit_code": 0,
+      "summary": "runs/001-handoff-01/run.json: ok; runs/001-handoff-02/run.json: ok"
+    },
+    {
+      "description": "claim commit pushed and read back before work started",
+      "paths": [
+        "runs/001-handoff-02/run.json"
+      ],
+      "command": "git show origin/claude/gatling-001-handoff-02-ittju6:runs/001-handoff-02/run.json",
+      "exit_code": 0,
+      "summary": "claim commit 25fd82803ffe7b1f90309d6ea9664d6ccae0bc6e on origin, status running, source_sha 1de672a13bf798380ef2eb414a1aebc9f096c433"
+    }
+  ],
+  "outcome": {
+    "tests": "pass (4/4)",
+    "traceable_source_sha": true,
+    "completed_from_repo_and_entry_prompt_only": true,
+    "needs_more_handoff_info": false,
+    "strict_mobile_no_history_sample": "pending human judgment; see conditions.read_other_run_artifacts and platform_injected_context",
+    "pull_request": null,
+    "acceptance": null
+  },
+  "human_decision": [
+    "Accept 001-handoff-02 as a strict mobile no-history sample or not, given the listed platform context and the one-time listing of runs/001-handoff-01 file names",
+    "Which handoff method experiment 001 should compare next; the plan does not specify it yet"
+  ],
+  "next_prompt": "runs/001-handoff-02/next.md"
 }
