@@ -6,7 +6,7 @@
   "branch": "lab/001-handoff-01",
   "owner": "codex-handoff-agent",
   "status": "in_review",
-  "updated_at": "2026-11-21T07:04:54+00:00",
+  "updated_at": "2026-11-21T08:12:30+00:00",
   "conditions": {
     "variable": "透過 repo 入口提示與文件接手",
     "fixed": [
@@ -34,14 +34,29 @@
       "command": "python3 -m unittest discover -s runs/001-handoff-01 -p 'test_*.py' -v",
       "exit_code": 0,
       "summary": "四組 unittest 各自通過（4/4）。"
+    },
+    {
+      "paths": [
+        "runs/001-handoff-01/review-01.md",
+        "runs/001-handoff-01/review-01-test-output.txt"
+      ],
+      "command": "python3 -m unittest discover -s runs/001-handoff-01 -p 'test_*.py' -v",
+      "exit_code": 0,
+      "summary": "獨立複查 01：手機新對話（session origin ios）中，在新 clone 的 a5557f05e3ed80bbde9e63a79ad9ea2504710d5f 與 43396de680b95ba4a9ea0303a88758b6b9784cb0 重跑，Python 3.13.18，四組 unittest 通過（4/4）；來源 SHA 祖先關係、認領提交、JSON 與相對路徑皆核對通過。"
     }
   ],
   "outcome": {
     "implementation": "passed",
     "repository_task_details": "recovered_without_extra_task_details",
     "strict_mobile_clean_context": "not_tested",
-    "reason": "工作目錄為全新 clone；小題與驗收全部從 repo 取得，未補題意；執行者不是由手機開啟的無歷史對話。"
+    "reason": "工作目錄為全新 clone；小題與驗收全部從 repo 取得，未補題意；執行者不是由手機開啟的無歷史對話。",
+    "independent_review": {
+      "review": "runs/001-handoff-01/review-01.md",
+      "implementation": "supported",
+      "strict_mobile_clean_context": "not_supported",
+      "reason": "第一輪執行者自述為主代理指派的 Codex 子代理，非手機新對話。複查本身在手機新對話中只靠 repo 完成，但交接的是複查而非實作，提示非 repo 原文，且平台注入其他 repo 的規則，不算嚴格樣本。"
+    }
   },
-  "human_decision": "獨立複查後，由人決定是否另做嚴格手機無歷史樣本；不得把本次當成該樣本。",
-  "next_prompt": "runs/001-handoff-01/next.md"
+  "human_decision": "是否做嚴格手機無歷史實作樣本（需先修訂計畫的 run id、分支與不得讀第一輪產物的規則）；是否為合併後的 run 增加狀態；是否加 .gitignore 排除 __pycache__。詳見 runs/001-handoff-01/review-01.md。",
+  "next_prompt": "runs/001-handoff-01/next-after-review.md"
 }

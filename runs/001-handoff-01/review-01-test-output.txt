@@ -1,0 +1,9 @@
+test_all_done (test_solution.PendingIdsTests.test_all_done) ... ok
+test_empty_planned (test_solution.PendingIdsTests.test_empty_planned) ... ok
+test_exact_case_and_duplicate_done (test_solution.PendingIdsTests.test_exact_case_and_duplicate_done) ... ok
+test_preserves_first_order_and_ignores_extra_done (test_solution.PendingIdsTests.test_preserves_first_order_and_ignores_extra_done) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
