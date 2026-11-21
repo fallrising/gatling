@@ -1,0 +1,3720 @@
+{
+  "version": 1,
+  "scope": {
+    "owner": "fallrising",
+    "visibility": "public",
+    "snapshot": "2026-11-21",
+    "basis": "固定各來源的預設分支提交。納入第一方的具名軟體設計文件、產品與功能規格、配套需求、設計分冊與契約。掃描範圍以固定版本內的文件命名和設計套件為準。",
+    "selection": "優先使用作者指定的公開主線，以同一個 Git blob 辨認封存副本。研究上游工具的案例只引用本地作者撰寫的實驗規格。目錄聚焦設計正文，涵蓋獨立閱讀所需的設計分冊。",
+    "url_template": "https://github.com/{repo}/blob/{commit}/{path}",
+    "mirrors": "mirrors 列出位元組相同的封存副本。歷史版本內容有異時，獨立列為 historical，並標記收斂後的 successor。"
+  },
+  "sources": [
+    {
+      "repo": "fallrising/fanzloud",
+      "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+      "path": "docs/TD.md",
+      "blob": "aa1d21d4162a81e2819069d7a03e03c2ac722b34",
+      "kind": "design-contract",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "platform/fanzloud/docs/TD.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/fanzloud",
+      "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+      "path": "docs/specs/SPEC-T005B-p0-http-api.md",
+      "blob": "3ad5d8819e825e726572d5c291f90da03ff26d44",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "platform/fanzloud/docs/specs/SPEC-T005B-p0-http-api.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/fanzloud",
+      "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+      "path": "docs/specs/SPEC-T006-private-operator-web.md",
+      "blob": "73ce907643bb443f758308cfdc4634d37ec4bf94",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "platform/fanzloud/docs/specs/SPEC-T006-private-operator-web.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/fleet-catalog",
+      "commit": "44ae502bd2ac5277904413a28af6f920428dcdc1",
+      "path": "docs/SDD.md",
+      "blob": "5e5a0115bce7368a596512ef59297f5024d58053",
+      "kind": "sdd",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "specs/fleet/docs/SDD.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "SPEC.md",
+      "blob": "c5c3ae1d85c42964fce97d50af5baa3f035ddd42",
+      "kind": "technical-design",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/SPEC.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/A01-in-document-search.md",
+      "blob": "eb0fb01f10709730e544af35ffce3adcac341872",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/A01-in-document-search.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/A02-file-watcher-rename.md",
+      "blob": "b32f434d424820756927055a07798fe2121d828d",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/A02-file-watcher-rename.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/A03-command-palette.md",
+      "blob": "32a616a996ab0da6fdbda27a24620b562cc56638",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/A03-command-palette.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/A04-tag-filter-view.md",
+      "blob": "969f97b66e1e80c4efa0fc504f5cc2bfe55afdff",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/A04-tag-filter-view.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/A05-wikilink-backlinks.md",
+      "blob": "02570bf98383ae4018243cfafe796ca8d87a40c5",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/A05-wikilink-backlinks.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/A06-mermaid.md",
+      "blob": "35c01a7bf556ec74385b30c38675b07a05d30bca",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/A06-mermaid.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/A07-export.md",
+      "blob": "3667c40dbdb383734a5c2dc98b95f47f2431be2e",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/A07-export.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/N00-foundation-ci-contracts.md",
+      "blob": "684b3a985a7dcdda734dc077af1f7d13bcbe1e2e",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/N00-foundation-ci-contracts.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/N01-sqlite-schema-migrations.md",
+      "blob": "a0d8b2548c7cb123af92d29817741c292eb02c53",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/N01-sqlite-schema-migrations.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/N02-workspace-lazy-tree.md",
+      "blob": "f77fdea16ca9ad636b649832091e44ead1bf7c0b",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/N02-workspace-lazy-tree.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/N03-markdown-render-model.md",
+      "blob": "077d447a3a8fd7779229595695dac503a2b957c6",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/N03-markdown-render-model.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/N04-tabs-state.md",
+      "blob": "300c0b37440bf1205d6d7aadeac0d2d0beebdd93",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/N04-tabs-state.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/N05-selection-anchor-capture.md",
+      "blob": "377df530b9161c39294c759e8b7ec61a9b9e390e",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/N05-selection-anchor-capture.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/N06-annotation-crud-highlight.md",
+      "blob": "c96896b6c968869fb4295e83679c4ad5765ad6f3",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/N06-annotation-crud-highlight.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/N07-comment-thread.md",
+      "blob": "cefe13bf3e2afcf1fd1ef870079d683e5ee1169a",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/N07-comment-thread.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/N08-tag-system.md",
+      "blob": "b1cd11b21435f7ac48fd6c79ff640b369fc5b077",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/N08-tag-system.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/N09-reanchor-engine.md",
+      "blob": "96aeeb32b777c2ad32de59dce72ef355ad8ca13d",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/N09-reanchor-engine.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/nodes/N10-orphan-management.md",
+      "blob": "0b0f4cf03e1dae243ef08cebf8bd4788e6c814c4",
+      "kind": "feature-specification",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/nodes/N10-orphan-management.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/flowshot",
+      "commit": "09bf5276dfb64ea03b915f5c7c0bfbe060da59b2",
+      "path": "docs/reference/complete-sdd.md",
+      "blob": "3fdb6fe165c4fdac3fff3a0da8a0c920b309e156",
+      "kind": "sdd",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "apps/flowshot/docs/reference/complete-sdd.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cloudform/docs/01-architecture-overview.md",
+      "blob": "a4830399cf608d8cc55be349723b5f6a49e51416",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/ai-native-workflow-form",
+          "commit": "74cac811b705acd20cea676aadc293fafcd59160",
+          "path": "docs/01-architecture-overview.md",
+          "blob": "a4830399cf608d8cc55be349723b5f6a49e51416"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cloudform/docs/02-form-config-schema.md",
+      "blob": "d1341a44a134a58f5080da2a29030ee71e1d6b28",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/ai-native-workflow-form",
+          "commit": "74cac811b705acd20cea676aadc293fafcd59160",
+          "path": "docs/02-form-config-schema.md",
+          "blob": "d1341a44a134a58f5080da2a29030ee71e1d6b28"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cloudform/docs/03-data-model.md",
+      "blob": "9f745f6bed238aa66921a0b5f3a33d46d212eee3",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/ai-native-workflow-form",
+          "commit": "74cac811b705acd20cea676aadc293fafcd59160",
+          "path": "docs/03-data-model.md",
+          "blob": "9f745f6bed238aa66921a0b5f3a33d46d212eee3"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cloudform/docs/04-api-design.md",
+      "blob": "03c0c40187c9196759c5b3c3a8afe126457d0bc8",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/ai-native-workflow-form",
+          "commit": "74cac811b705acd20cea676aadc293fafcd59160",
+          "path": "docs/04-api-design.md",
+          "blob": "03c0c40187c9196759c5b3c3a8afe126457d0bc8"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cloudform/docs/05-frontend-design.md",
+      "blob": "3b6cbf5dc05d047d4225c92407a8da907bf0e93e",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/ai-native-workflow-form",
+          "commit": "74cac811b705acd20cea676aadc293fafcd59160",
+          "path": "docs/05-frontend-design.md",
+          "blob": "3b6cbf5dc05d047d4225c92407a8da907bf0e93e"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cloudform/docs/06-roadmap.md",
+      "blob": "92334bba512b5be3c5db61f99033afbe63388276",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/ai-native-workflow-form",
+          "commit": "74cac811b705acd20cea676aadc293fafcd59160",
+          "path": "docs/06-roadmap.md",
+          "blob": "92334bba512b5be3c5db61f99033afbe63388276"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/sdd/00-overview.md",
+      "blob": "84bfdc4da8c9556a4a5177f9b0535f2c025bf8a9",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/specs/90-synthesis.md",
+      "blob": "aa487bfeb4807e8b0ca35db1fb54ea6ec263fa0d",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/specs/demo-album.md",
+      "blob": "0e307f6682cc1064912f2df1ab616e74ec1932f1",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/specs/demo-petclinic.md",
+      "blob": "46eb92e877aa4526af93b6e8c61acffb41420253",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/specs/demo-projects.md",
+      "blob": "54e3bd5d509efa30bcf1604cddf5fcc5abd36857",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/specs/kernel-content.md",
+      "blob": "f08ae707177f1898c7c647c62dc42caf52945752",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/specs/kernel-identity.md",
+      "blob": "9f1168cca49e5caf72d243a254bfaf525f6a07bf",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/specs/kernel-media.md",
+      "blob": "42229ff9caa298ad7fb7191ce7c025f753d4b550",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/specs/surface-admin.md",
+      "blob": "8e2065205db3ef8aee6e9bc55f4e4936e10e938e",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/specs/surface-back.md",
+      "blob": "0d65a7c9e970827a936df97256b8353ce15c27fb",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/specs/surface-front.md",
+      "blob": "cf7e23111fbb6265263bdc57cbe76b296286968c",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/v2/01-frontend-sdd.md",
+      "blob": "e302968f0714be6aace8faf5e824451fa13f88e9",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/v2/02-backend-sdd.md",
+      "blob": "b303b1e7b41504286f8db50e4f407ce91512f7b1",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/v2/contracts/BW6-content-media.md",
+      "blob": "692bb493ad5b4c4b9f28d4ce44e3626a6c186cf1",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/v2/contracts/BW6-identity.md",
+      "blob": "044baf9e56ac1ea765465dca02a9bc485bbd1513",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/v2/contracts/PP1-accounts.md",
+      "blob": "4932bda195679115ff5b82e728a7a076f1e927c1",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/v2/contracts/PP1-governance.md",
+      "blob": "1f8d5832c894872968dbef92097707d3e189d122",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/v2/contracts/PP1-owner-operations.md",
+      "blob": "1e625ced54865ec0a19ca495fe6e18c25c153eab",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/v2/contracts/PP1-recovery.md",
+      "blob": "ccc468d6dbc25d2ff5c491fbfb81c202bce06f3c",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/docs/v2/contracts/PP1c-local-adapters.md",
+      "blob": "8803159ce24461d528f7e99160f537b2d4025484",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/cms-scaffold/fe-review/DESIGN.md",
+      "blob": "48d1b44e72e50bef440e67fbdbb0d9e11224554e",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/SPEC.md",
+      "blob": "3085f89a73097fa64d3442aeb729f618c87b618f",
+      "kind": "technical-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/A01-in-document-search.md",
+      "blob": "4c3d8c0b94007812cb145d84ee9c39901b7e7209",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/A02-file-watcher-rename.md",
+      "blob": "e9a609e2c5e4f41cb21565a107c94f265de1542e",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/A03-command-palette.md",
+      "blob": "c2553067af4abb11b242afdaa512293087f961c7",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/A04-tag-filter-view.md",
+      "blob": "d3b7573cbd9fee4e78defc429f3477c9217747f3",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/A05-wikilink-backlinks.md",
+      "blob": "743fee7018ad04147ce8ee2cebeb5b7e73911ad6",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/A06-mermaid.md",
+      "blob": "72f01684312232906284ad5b4c3d661f37bab8d7",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/A07-export.md",
+      "blob": "ef6c32e155292fe0a4f4a559b85af0fb78245e34",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/N00-foundation-ci-contracts.md",
+      "blob": "a3b05c39af5454c51084a49544e9b6c45f415fe0",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/N01-sqlite-schema-migrations.md",
+      "blob": "2860d8590916eaee2115e12f6b0a782f09828fd2",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/N02-workspace-lazy-tree.md",
+      "blob": "87d6afbe316966a045996d04610616dd328bbbca",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/N03-markdown-render-model.md",
+      "blob": "e622b02cac3d2d677fc2866d3a3f0d7929275061",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/N04-tabs-state.md",
+      "blob": "8c22faa73b96dcf1035ebb4d762f43603a08c2a6",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/N05-selection-anchor-capture.md",
+      "blob": "3be318f5fac2aebbfebc99acf15949fc87b26023",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/N06-annotation-crud-highlight.md",
+      "blob": "41d1f8223fd3171bf10e5aac4ca85fbb12a7cccc",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/N07-comment-thread.md",
+      "blob": "ffa05b006894dec2333f7fa02d3710e30da6a489",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/N08-tag-system.md",
+      "blob": "1070b6b88a662b11eb0c59630fe7b54ac1ecf55e",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/N09-reanchor-engine.md",
+      "blob": "b0f72577b2992170dbf2276772b563b5fb35894f",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/nodes/N10-orphan-management.md",
+      "blob": "01c1f5c685509a7534680d6dca7095c2b93e60dc",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/docs/reference/complete-sdd.md",
+      "blob": "84fa95af8e47e1136d576578faf07d95afa5a794",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/flowshot/fe-review/DESIGN.md",
+      "blob": "e62049c872f32db789f2d970e70dc4995c9301c4",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/loom/FREEZE.md",
+      "blob": "152bd8a1a7a78371ab34045db4ef5740699ef021",
+      "kind": "design-contract",
+      "mirrors": [
+        {
+          "repo": "fallrising/loom",
+          "commit": "fa92dc5c9711bef5df65110c873ff27bc622c69f",
+          "path": "FREEZE.md",
+          "blob": "152bd8a1a7a78371ab34045db4ef5740699ef021"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/loom/docs/ai-request-lifecycle.md",
+      "blob": "2597e948cfc29cfd2235f22b4ac4f336fc6d02e6",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/loom/docs/document-close-safety.md",
+      "blob": "862bc23f323567d41bc9557600f94e9f8510a610",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/loom/docs/document-create-safety.md",
+      "blob": "c9490cc0ac26b40a05925b7ae439bc46fc466d57",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/loom/docs/native-platform-acceptance.md",
+      "blob": "f38041726c08aabf9f56ad7c0250499989d06ba7",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/loom/docs/opencode-provider.md",
+      "blob": "0e187c753ff7c5295584155e1458440526168eea",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/loom/docs/reliability.md",
+      "blob": "270c602cd093e39442c8d7f3b830372b2c60f389",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/loom/docs/session-recovery.md",
+      "blob": "1811323c0e28a3a9fb9b9d2dd87377a04249bbf5",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/loom/docs/window-close-safety.md",
+      "blob": "c766595519f4f06269031fcb375aeba69945b728",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/loom/docs/workspace-acceptance.md",
+      "blob": "df05eeffe47743bd81de14c3beef370783ad5feb",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "apps/loom/fe-review/DESIGN.md",
+      "blob": "1556361243b2b1770adc44d41b82f45984a6eb9b",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "docs/fe-review/ROUND2-SDD.md",
+      "blob": "05a2cd635ba34339c8c90ffc21a92d9d86344dc2",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "docs/fe-review/SDD.md",
+      "blob": "a5b5c2cb243ddd9c14f4aff6c1b444353b83ff00",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "gateways/edge-relay/SDD.md",
+      "blob": "940762426e6e3350d07bc6aa0ddb402c45d8ecf6",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "gateways/pokercase/docs/ARCHITECTURE.md",
+      "blob": "5299658aef5b0e0da09e5bcbdf01a7d07057e7f9",
+      "kind": "technical-design",
+      "mirrors": [
+        {
+          "repo": "fallrising/pokercase",
+          "commit": "b0d210d347a0d5d43cd12d396cf4928c03c3e593",
+          "path": "docs/ARCHITECTURE.md",
+          "blob": "5299658aef5b0e0da09e5bcbdf01a7d07057e7f9"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "gateways/pokercase/fe-review/DESIGN.md",
+      "blob": "18519b5dcf48639efc212c96a00c681256add769",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/agent-office-lab/docs/SDD.md",
+      "blob": "5b5c08ec865cbfa461a71ba7689ac8c8c8dbcf09",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/bee-swarm/docs/02-architecture/communication-patterns.en.md",
+      "blob": "3769db449b884307e89b1fe808a3e7019732bb66",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/bee_swarm",
+          "commit": "8d2586ec0ec33a2e16ed5847c1fac10ef5adbcf8",
+          "path": "docs/02-architecture/communication-patterns.en.md",
+          "blob": "3769db449b884307e89b1fe808a3e7019732bb66"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/bee-swarm/docs/02-architecture/communication-patterns.md",
+      "blob": "83c345da28be66149b3f8afc7a0425343a6e81dd",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/bee_swarm",
+          "commit": "8d2586ec0ec33a2e16ed5847c1fac10ef5adbcf8",
+          "path": "docs/02-architecture/communication-patterns.md",
+          "blob": "83c345da28be66149b3f8afc7a0425343a6e81dd"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/bee-swarm/docs/02-architecture/hybrid-architecture.en.md",
+      "blob": "43b314708f78dd9db60f4945559712f15f72db72",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/bee_swarm",
+          "commit": "8d2586ec0ec33a2e16ed5847c1fac10ef5adbcf8",
+          "path": "docs/02-architecture/hybrid-architecture.en.md",
+          "blob": "43b314708f78dd9db60f4945559712f15f72db72"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/bee-swarm/docs/02-architecture/hybrid-architecture.md",
+      "blob": "b9201e6d36239e1b7b58e8a059f99088ad7dd9ad",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/bee_swarm",
+          "commit": "8d2586ec0ec33a2e16ed5847c1fac10ef5adbcf8",
+          "path": "docs/02-architecture/hybrid-architecture.md",
+          "blob": "b9201e6d36239e1b7b58e8a059f99088ad7dd9ad"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/bee-swarm/docs/02-architecture/role-design.en.md",
+      "blob": "9ca885577eb5fb4b9fcda2b04721b9e99716f55b",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/bee_swarm",
+          "commit": "8d2586ec0ec33a2e16ed5847c1fac10ef5adbcf8",
+          "path": "docs/02-architecture/role-design.en.md",
+          "blob": "9ca885577eb5fb4b9fcda2b04721b9e99716f55b"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/bee-swarm/docs/02-architecture/role-design.md",
+      "blob": "fa46811ea77bbc95dffa9a48d607d80e37bb3c98",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/bee_swarm",
+          "commit": "8d2586ec0ec33a2e16ed5847c1fac10ef5adbcf8",
+          "path": "docs/02-architecture/role-design.md",
+          "blob": "fa46811ea77bbc95dffa9a48d607d80e37bb3c98"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/bee-swarm/docs/education-game-project/02-requirements/requirements-analysis.md",
+      "blob": "737f20ad5663d5f7e1899825687274505b5208e4",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/bee_swarm",
+          "commit": "8d2586ec0ec33a2e16ed5847c1fac10ef5adbcf8",
+          "path": "docs/education-game-project/02-requirements/requirements-analysis.md",
+          "blob": "737f20ad5663d5f7e1899825687274505b5208e4"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/bee-swarm/docs/education-game-project/02-requirements/task-breakdown.md",
+      "blob": "6ed104534e6ecbf4db68a92fd41d94dd57c05f6f",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/bee_swarm",
+          "commit": "8d2586ec0ec33a2e16ed5847c1fac10ef5adbcf8",
+          "path": "docs/education-game-project/02-requirements/task-breakdown.md",
+          "blob": "6ed104534e6ecbf4db68a92fd41d94dd57c05f6f"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/bee-swarm/docs/education-game-project/03-architecture/system-architecture.md",
+      "blob": "41bb90e6fcf50e3c99fab1b10f645fb75ec5d790",
+      "kind": "design-chapter",
+      "mirrors": [
+        {
+          "repo": "fallrising/bee_swarm",
+          "commit": "8d2586ec0ec33a2e16ed5847c1fac10ef5adbcf8",
+          "path": "docs/education-game-project/03-architecture/system-architecture.md",
+          "blob": "41bb90e6fcf50e3c99fab1b10f645fb75ec5d790"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/eru-vps-mvp/docs/SDD.md",
+      "blob": "072c2609ad19893560018d87ae74ee42a09759d5",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/graphify-lab/SDD.md",
+      "blob": "e355d8da48e9a77a5703123b99f2594f745786b0",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/handwired-learning/docs/SDD.md",
+      "blob": "c17dd74f60dd0f256cf1813b4c4513c68db6b5d9",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/iris-lab/SDD.md",
+      "blob": "f82aa577050ec429c82bb93b9a26bb88cba43fac",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/memvid-lab/SDD.md",
+      "blob": "5d62edcd418afec54315c300242b0e3a4a84258e",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/mithril-research/docs/P1-BOOTSTRAP-CONTRACT.md",
+      "blob": "673368f8858904c80e2e03b1b00989c10b5da803",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/mithril-research/docs/P1-COLLECTOR-CONTRACT.md",
+      "blob": "995cddd5cc37bb4019e4082b94ec30e358368cda",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/mithril-research/docs/P1-CONTRACT.md",
+      "blob": "3d5f0371714316455a210c8bce15ad8926439de4",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/mithril-research/docs/P1-JOURNAL-CONTRACT.md",
+      "blob": "180dc93d79afa5ff41f26a01ab3cb4c5f1650aa9",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/mithril-research/docs/P1-PHASE-CONTRACT.md",
+      "blob": "5842d33ce3632dfb2d4e44771d3c5dd2e1f9e013",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/mithril-research/docs/P1-TOOLS-CONTRACT.md",
+      "blob": "25d4133cbd6614b0c236659f9993254103072f83",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/mithril-research/docs/SDD.md",
+      "blob": "5cb800e21375b3fffb44609ceadc8f2f1afd4cd0",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/open-compute/docs/SDD-M2.md",
+      "blob": "4914efc11ceca09dff516fbac000dcd04b96fb2d",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/open-compute/docs/SDD-M3.md",
+      "blob": "cd14dd63f8e8225e5d577ea99ec7413d7da461d0",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/open-compute/docs/SDD-M4.md",
+      "blob": "17eec617f836faa57dd85f7991d90d793542403e",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/open-compute/docs/SDD-M5.md",
+      "blob": "138647acc0d981645bcc6a35b2bce8468eb41e68",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/open-compute/docs/SDD-M6.md",
+      "blob": "420098646406914fbb72ec86dc39e5ab1b2ba9bc",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/open-compute/docs/SDD-M7.md",
+      "blob": "b6d2a7d21715bd1d791c56d8c52300913b7bdd5c",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/open-compute/docs/SDD.md",
+      "blob": "5c76e9e7ead1b8cbc1055e5226aefe82e158d542",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/openmmo-lab/docs/SDD.md",
+      "blob": "2ff4fd76443e05c1a1458c225428cafb0f01c06d",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/openviking-context/SDD.md",
+      "blob": "2d2ca63804aeab332c7f302eddc471643b241894",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/pg-jev-router/SDD.md",
+      "blob": "3957a85bf95320ce1c61799b009d9dc8279cb656",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/pixelorama-class-showcase/SDD.md",
+      "blob": "3bf0249e094212ae1463dcd373e80100f0addfcf",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/retro-economy/docs/SDD.md",
+      "blob": "85c734f13024e5a7dcc0af7d52ed393017e3100b",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/retro-economy/docs/re1-contract.md",
+      "blob": "c97140faa3c6a2c8945d5c1104adc8b1b851c5e1",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/retro-economy/docs/re2-contract.md",
+      "blob": "656ada79811050e379771f0ef54d92f0ccc6b2d5",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/retro-economy/docs/re3-contract.md",
+      "blob": "809040a4cc3778aaddd954604595bc2fd570936a",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/token-economizer-lab/SDD.md",
+      "blob": "ab9488cb91589b2ca015c16182c611a5ed6bb0ac",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/virtual-office-lab/SDD.md",
+      "blob": "37a6384d3bef85558f687c5cbaba1f9a69d0d9f0",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "labs/zircon-godot/docs/sdd/README.md",
+      "blob": "1b8cc5415be918565dc1c4049c7081d90aa6fecc",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/agent-platform/SDD.md",
+      "blob": "fa7893585b1b10153d6e847750811bd4d83a850b",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/agent-platform/docs/sdd-external-task-source.md",
+      "blob": "39a3de3a2488fd097487b1e3c648dcc324205b15",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/agent-platform/fe-review/DESIGN.md",
+      "blob": "69cf2fad12905ee35631b9a90eeac1739d48fbb2",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/agent-workforce/SDD.md",
+      "blob": "bd85414e33d707c7c7bc42f3bfccf31afb7168cd",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/agent-workforce/docs/xn-slice1-design.md",
+      "blob": "193b8b29ac7b91f5766e78e6fb7aea100ce79a98",
+      "kind": "technical-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/cloud-lab/SDD.md",
+      "blob": "8d7567a7250b54d1d0dff349c6764042296de4de",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/cloud-lab/docs/architecture.md",
+      "blob": "5877d406368ebe5d29419c98aee0f9e2a320377f",
+      "kind": "technical-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/cloud-lab/docs/host-agent-design.md",
+      "blob": "8f5f66817baf2554be11bff306f01dea940be175",
+      "kind": "technical-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/SDD.md",
+      "blob": "257a3ab3a4c775d0675f34c9fcfba2b784343134",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/M0-CONTRACT.md",
+      "blob": "d5e1a5529d5dd6cd62f429051db38bc725490647",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/M1-INTEGRATION-CONTRACT.md",
+      "blob": "5a7ce2b13eb90e01029dff540b3a6447715a52a8",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/M2-INTEGRATION-CONTRACT.md",
+      "blob": "28253efb0c0fdf645fc7c6997e6f860f755a4cb7",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/M3-INTEGRATION-CONTRACT.md",
+      "blob": "0e3524d528403150356232efce4e2ad8eeb60047",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/M4-INTEGRATION-CONTRACT.md",
+      "blob": "e796ccdc60d784c5d30356a8f3bd6c0124b4eaaa",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/M5-INTEGRATION-CONTRACT.md",
+      "blob": "12a7b443589f9f933c15e89ea142b122a2cff031",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/W1-INTEGRATION-CONTRACT.md",
+      "blob": "1da12ac455d3718e6de05f5375eb9ae2bcc57a56",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/W2-INTEGRATION-CONTRACT.md",
+      "blob": "dbf693a41f159c4d7d97af68d57fa143dbc1364e",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/W3-INTEGRATION-CONTRACT.md",
+      "blob": "a3374d89e5d2aa48048b3aa522838c627a9e1b63",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/W4-INTEGRATION-CONTRACT.md",
+      "blob": "98a750fb73cec4b5a43be6b67d2c9ba4969d051c",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/W5-INTEGRATION-CONTRACT.md",
+      "blob": "bb26c4ab92506a9d61a8cdbf4249643b7e1a9c03",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/01-product-ux.md",
+      "blob": "46e1b4dfc40579766f24d71e6fd4644ef901627a",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/02-cmdb-model.md",
+      "blob": "ad6e8a37fcd6d0a0e40ec69ecf027e8be90188f2",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/03-workflows.md",
+      "blob": "76beab8dd1a45544e92d2f976dcbb83e1e1922fa",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/04-permissions-admin.md",
+      "blob": "e9e3ddc9ad2b899ac98a748facf79ad244ee67ed",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/05-frontend-architecture.md",
+      "blob": "f74b41a734813a548a942a01b9754a431633085f",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/06-api-mock.md",
+      "blob": "0ed1c6677b347c480d3862a3eb7a04ea82a082e2",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/07-delivery-validation.md",
+      "blob": "3a126c568cfb106eaa22e142dffa354da92d1afc",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/08-decisions-sources.md",
+      "blob": "9176bc5236d92016e8240a72477e9c6693313e0d",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/09-shared-workspaces.md",
+      "blob": "fae487e2f81093af51ba3418efde376fa18be414",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/10-rd-workspace.md",
+      "blob": "89c373a709bd8be1bf607f1d8f7d0fee018c6abd",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/11-ops-workspace.md",
+      "blob": "3d1cd9429743ab3e7957deb6bc2c0e0318416549",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/12-admin-workspace.md",
+      "blob": "afab1af3a0a59c983432e59146f6d01cbf6f0378",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/13-capability-map.md",
+      "blob": "d572f4c8045a840caf59a053427e51574c699171",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/docs/sdd/14-workspace-delivery.md",
+      "blob": "b09bbb8263d59699a6236f7909ef03a09b348c5a",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/dim-gate/fe-review/DESIGN.md",
+      "blob": "d787b2bc12f9caed45c229f668ca7f06b321ccf6",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/edge-ops/SDD.md",
+      "blob": "df0a1af09848ee399c4c6df93fb3b3d99cd06254",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/edge-ops/docs/sdd/01-frontend.md",
+      "blob": "b1fd2406081c24fa4756dd00c056318dda1b9306",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/edge-ops/docs/sdd/02-backend.md",
+      "blob": "a457036532d48cc09cd37c3796093a83d925188d",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/edge-ops/docs/sdd/03-agent.md",
+      "blob": "c3fd4f8f74c8d5f8451cd39addbf741d385684eb",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/edge-ops/docs/sdd/04-bootstrap-and-images.md",
+      "blob": "2ecec0783db3c47e577d8c28471cb5f6bf253f5c",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/edge-ops/docs/sdd/05-contracts-and-security.md",
+      "blob": "0e127e05e397e6354f688619c3e9d00334192c13",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/edge-ops/docs/sdd/06-delivery-and-acceptance.md",
+      "blob": "34a5a00de314fa590dfcfdbc7845ca193523559a",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/edge-ops/docs/sdd/07-capacity-and-operations.md",
+      "blob": "1ff099ca77fd784046d0fabac9bc3cf70ca522b0",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/SDD.md",
+      "blob": "81fdeb88596795bbcd3fde1cf2ced1fbca9242b6",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/TD.md",
+      "blob": "1234b4fe83d4d1213f048cbbba7d9977038c1f73",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-M1-isolated-web.md",
+      "blob": "259276716ec6788ffbe9a5e582c5588a4757dd6b",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-M1-qualification.md",
+      "blob": "3fbba8ab7506d80bfb7a22132deee60dd8803e13",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-M2-two-vendors.md",
+      "blob": "7c0331f57830e4e0b8953d01b5f41e05053701c5",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-M3-durable-intents.md",
+      "blob": "ea99a94fa091db1949cb456e2bcf901a6329c9c3",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-M3-fixed-candidate.md",
+      "blob": "1d1447c2a2add5b14825c42ed1fa424124961348",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-M3-readonly-review.md",
+      "blob": "3a1b7d67ac27e086a737ddf4d2d95f65f8b16f77",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-M3-recovery.md",
+      "blob": "6cea03f53625b70d9ceda4e4989bd726c27a20b1",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T002-codex-login-broker.md",
+      "blob": "766de96ca8d2dbbb9bd97a45d1323f0b28ca023a",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T002-codex-login-broker.md",
+          "blob": "766de96ca8d2dbbb9bd97a45d1323f0b28ca023a"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T002A-credential-scope.md",
+      "blob": "8f3d440e77d3e240264f4c0a7e227fcd15677c84",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T002A-credential-scope.md",
+          "blob": "8f3d440e77d3e240264f4c0a7e227fcd15677c84"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T002B-codex-device-login.md",
+      "blob": "a43d219bd4440b165f3a2ea7355df6f05610d2a7",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T002B-codex-device-login.md",
+          "blob": "a43d219bd4440b165f3a2ea7355df6f05610d2a7"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T003-codex-cloud-contract.md",
+      "blob": "0394ce70eb45673e08cf3b2d1ce924530acf6aa0",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T003-codex-cloud-contract.md",
+          "blob": "0394ce70eb45673e08cf3b2d1ce924530acf6aa0"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T004-codex-cloud-orchestrator.md",
+      "blob": "eae4143d360fca19caaef39232108faaaba3ab6b",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T004-codex-cloud-orchestrator.md",
+          "blob": "eae4143d360fca19caaef39232108faaaba3ab6b"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T004A-cloud-command-runner.md",
+      "blob": "fb3cec39a956b1fb0034ddee7359b88cbfd105da",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T004A-cloud-command-runner.md",
+          "blob": "fb3cec39a956b1fb0034ddee7359b88cbfd105da"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T004A1-cloud-submit-recovery-bridge.md",
+      "blob": "081c978282e807f53f418bc65e2cc64cb396e79b",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T004A1-cloud-submit-recovery-bridge.md",
+          "blob": "081c978282e807f53f418bc65e2cc64cb396e79b"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T004B-cloud-task-lifecycle.md",
+      "blob": "e20f1ab6051741a549c9d1aae6473ee967d3bf43",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T004B-cloud-task-lifecycle.md",
+          "blob": "e20f1ab6051741a549c9d1aae6473ee967d3bf43"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T004C-cloud-diff-retrieval.md",
+      "blob": "ec0092bacee2c11d2b23fd8589cbbeccf354f311",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T004C-cloud-diff-retrieval.md",
+          "blob": "ec0092bacee2c11d2b23fd8589cbbeccf354f311"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T005-p0-session-api-stream.md",
+      "blob": "e0ee95ce8a25e5b89e284371a69c870e65294a84",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T005-p0-session-api-stream.md",
+          "blob": "e0ee95ce8a25e5b89e284371a69c870e65294a84"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T005A-p0-session-lifecycle.md",
+      "blob": "228265692a1ad19e0abf626973c63f8fe098b26e",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T005A-p0-session-lifecycle.md",
+          "blob": "228265692a1ad19e0abf626973c63f8fe098b26e"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T005B-p0-http-api.md",
+      "blob": "2877af4b232652a11fb5bf8c997d7760f46bc2dd",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T005C-p0-websocket-stream.md",
+      "blob": "2c271eb94092e97f7f98ec94aab9f46c98f2301d",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T005C-p0-websocket-stream.md",
+          "blob": "2c271eb94092e97f7f98ec94aab9f46c98f2301d"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T006-private-operator-web.md",
+      "blob": "357ba10098761ab0f06364b00e421059c834ec25",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T006F-browser-followup.md",
+      "blob": "8a55e4c23e3582e5322b8694e4361e2d31af8a39",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T006R-conformance-proposal.md",
+      "blob": "c905c7262acf3b271bb0c54a3241449edafeb925",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T006R-desktop-remaining-v5.md",
+      "blob": "c08d3587f4e8f8ef8fc465cf47d7f151f63dc192",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T006R-fe-review.md",
+      "blob": "1558c41947e45806bf350934ebe68f61ddabf129",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T006R-focused-journeys.md",
+      "blob": "a53ec569e1af685f0aa9ef13dc9c66c92497128a",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T006R-harness-repair-c2.md",
+      "blob": "ce517980e3e080fa52c084bd7f0f5a6b51a84507",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T006R-initial-trace-v3.md",
+      "blob": "c87e9c711537360ad959bc56ce282a39a8b62462",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T006R-m2-repair.md",
+      "blob": "34b4170d0bfa676c96b9a450365b89cb11040191",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T006R-recapture-v7.md",
+      "blob": "e762f42520ad8667d2e6d44476099f26f71ccf3c",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T006R-recovery-v4.md",
+      "blob": "e2e246d679c7bbb9dd08e802da72fbc0e2a97ae0",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T006R-shared-capture.md",
+      "blob": "2c8e46136d9f006b6233f9e48187664a77c6b5ac",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T006R-tablet-mobile-v6.md",
+      "blob": "b52592ba2497d090c164b0967ec10826ede99a4c",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T007-p0-subscription-e2e.md",
+      "blob": "b252a263083556d049b53d15f7d30067f49524f1",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T007-p0-subscription-e2e.md",
+          "blob": "b252a263083556d049b53d15f7d30067f49524f1"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T008-p0-real-browser.md",
+      "blob": "d81483f2072a821121642f8b7b04c97da056392c",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T010-strong-ids-errors.md",
+      "blob": "a06203e13e2b8431804a2a28f495a50f3e7e0582",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T010-strong-ids-errors.md",
+          "blob": "a06203e13e2b8431804a2a28f495a50f3e7e0582"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T020-events-reducer.md",
+      "blob": "0ab7d87a4a1b0947b3bcd2e390b3cfea0b68350e",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/fanzloud",
+          "commit": "d070dfbbf122664de62195aceac26b78f4e55dbb",
+          "path": "docs/specs/SPEC-T020-events-reducer.md",
+          "blob": "0ab7d87a4a1b0947b3bcd2e390b3cfea0b68350e"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T030A-sqlite-append.md",
+      "blob": "07118212b15fc8bd6997acf4e7a68939021a310e",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T030B-sqlite-replay.md",
+      "blob": "2c03551f8c6b1e990a33ced729ca0aa9937b63b6",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T030C-sqlite-snapshot-load.md",
+      "blob": "05659d4bb8b911a6b2076f05e22290bd8d2b630e",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T030D-sqlite-snapshot-save.md",
+      "blob": "9e269f4d5e485d47367a8e029685fccd587d8b2e",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T030R-monorepo-recovery.md",
+      "blob": "bbe0a364079b72534a31da68e05dd215ac373212",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T040-session-actor.md",
+      "blob": "2f3762879a3a38ef6ed0b195b81ec8b4888bceb4",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/docs/specs/SPEC-T040A-command-decision.md",
+      "blob": "5ae1ad216fce23a88d901668668b9ae874b320bc",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/fanzloud/fe-review/DESIGN.md",
+      "blob": "22aeb8fc2e7388477014dd111795c110ca6734ec",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/docs/sdd/00-SDD-OVERVIEW.md",
+      "blob": "7ad7680db9ccf52a9c94d9f0c2e5c9692a65471e",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/docs/sdd/01-ARCHITECTURE.md",
+      "blob": "4d6c863c87e5033272d5bbc3d545564ea88f2743",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/docs/sdd/02-SDD-WORKFLOW.md",
+      "blob": "3b4a190d6094dcc22baeac8abde2ace1ad87b3e5",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/docs/sdd/03-MULTI-AGENT-ORCHESTRATION.md",
+      "blob": "e10f50a1d520e2f84c911089b65273b59d558bff",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/docs/sdd/04-KNOWLEDGE-REFINERY.md",
+      "blob": "ce314b855a403a33023b34549792ed5a7cbc4b54",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/docs/sdd/05-IMPLEMENTATION-PHASES.md",
+      "blob": "a0e16fb04cde2453e615ed43dc3e26e0d6d05d91",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/docs/sdd/06-SECURITY-OPERATIONS.md",
+      "blob": "a443bc2e67fdb2c11cbc40c9a9b090dec475de6d",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/docs/sdd/07-END-TO-END-EXECUTION.md",
+      "blob": "5bfb22dff6a6cfd85b568896380421eb96d0e43b",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/fe-review/DESIGN.md",
+      "blob": "8f96cbf8dd64d57e8d8f530eef7bfc98dd68d134",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/specs/active/full-build/spec.md",
+      "blob": "3c41d4abb8d1c2907fd1138286b4cc17559294bb",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/specs/active/knowledge-ingestion/spec.md",
+      "blob": "1a7cb181aff1d2c409c896b7aed2e61d5be78d5b",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/specs/active/knowledge-synthesis/spec.md",
+      "blob": "d26a07c0818fccee6cacc3a5fd7102d808a954b3",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/specs/active/multi-provider-routing/spec.md",
+      "blob": "27704aeafc5c38446940040fa34a2c00cfcbe290",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/specs/active/operational-hardening/spec.md",
+      "blob": "cb468d24e6cb27e554c994ba1ceb8b58fd0c87be",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/specs/active/production-document-batch/spec.md",
+      "blob": "442fbf970a591e239188cd6967b7ece2b0681790",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/specs/active/publication-compiler/spec.md",
+      "blob": "d3bf933982b960411c2623ea2c5f99cb4f6c4d4f",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/specs/active/readable-document-results/spec.md",
+      "blob": "a884893c6cc7fd17f5da6425746394a3cc12c447",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/specs/active/sdd-cli/spec.md",
+      "blob": "83709fc02b6296f86a762c35a74b144124554531",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/ice-maker/specs/active/secure-execution/spec.md",
+      "blob": "dd3c326a85a276fb0ab01e827ea001844e8d26af",
+      "kind": "feature-specification"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/00-SDD-OVERVIEW.md",
+      "blob": "6078040fa80a458290204c4e1bd8db9baa25125d",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/01-ARCHITECTURE.md",
+      "blob": "4c059be4e64cc91cece57723cf5e1bd35e633a97",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/02-COMPATIBILITY-CONTRACT.md",
+      "blob": "60d1842f86bd7aac5165afded5012ebed9440fff",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/03-STORAGE-SPI.md",
+      "blob": "3a083576b2239ac9ad240cb14a44404f2225f2b8",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/04-DATA-MODEL.md",
+      "blob": "74da371d7b978acf22bf7b5a408a7c0448243b41",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/05-INGEST-PIPELINE.md",
+      "blob": "20f3ad57c2cb9e596170503ce3b0990e17e0d5ce",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/06-QUERY-ENGINE.md",
+      "blob": "28df1ac0ec0025cb2487b71125895f261e2641fd",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/07-ALERTING.md",
+      "blob": "64953908af65e46a672b3abcd4c49b87f2386bdd",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/08-AGENT-AND-COLLECTORS.md",
+      "blob": "d43360e6c99b3f752e85f126d4465f2e6ba2d8ae",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/09-CONTROL-PLANE.md",
+      "blob": "ffb27f57df8cc7d1a093d4bf0ff45fef52bf01bf",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/10-CONFORMANCE-TESTING.md",
+      "blob": "3ab109e3fb01190a18d87426dd33176c16d9e649",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/11-DEPLOY-OPERATIONS.md",
+      "blob": "f6f802cffbef16c5e1d900f7c68bc064cd1e95fe",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/12-IMPLEMENTATION-PHASES.md",
+      "blob": "51fd151184207edd5070b62d7b83eb06854df2d3",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/13-ADR.md",
+      "blob": "38b2def4a006bfdf19cc6276bb12439ecbae20d6",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/14-SPI-GO-REFERENCE.md",
+      "blob": "da9ab4f4481c7cac1fc857f06175779c25bc3edb",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/15-PROTOCOL-MAPPING.md",
+      "blob": "84077032b9f2f64dfa7e70fb31c1f7ee4d0a5cde",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/16-LOGQL-GRAMMAR.md",
+      "blob": "ad6465d55302c4d6af618681bdc1ca2e6ae154a6",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/17-DRIVER-CLICKHOUSE.md",
+      "blob": "3a525abf77967e8e4e5eecb0c937ff89787ab7eb",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/18-DRIVER-VMVL.md",
+      "blob": "624976794f0640af5c55114d0695c7624b1a3c2d",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/19-CONSOLE-API-REFERENCE.md",
+      "blob": "30764c82d7e72b5d70154caaed366f96c61286a3",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/20-SELF-TELEMETRY-REGISTRY.md",
+      "blob": "bb99dfae7e349aa162d304e9995fdc565d9973c9",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/21-SECURITY-THREAT-MODEL.md",
+      "blob": "e85e1ba8fa418bb08843f661171c10faf339d3a1",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/22-DEPLOY-ARTIFACTS.md",
+      "blob": "36252774e4d9f447dc42890adc04448ebbf1984b",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/prism/docs/sdd/23-GLOSSARY-CONVENTIONS.md",
+      "blob": "e8c5263deba8dd1e57722bf9bde4cca0f68f14c0",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/signal-hub/SDD.md",
+      "blob": "bcb3c8b849851cd4d9dd2945a68167d45f8c6bed",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/signal-hub/docs/m3-design.md",
+      "blob": "5030e801514541b8a0264838fd22188a0554f23f",
+      "kind": "technical-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/signal-hub/docs/m4-design.md",
+      "blob": "b298ae13371ba16dc8e9bbf833f8f7aedb3010aa",
+      "kind": "technical-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/signal-hub/docs/m5-design.md",
+      "blob": "d10ada2f5dbaf8c2a0561c11e3c9754a4c39cf85",
+      "kind": "technical-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/signal-hub/docs/m6-design.md",
+      "blob": "3e0e406a132872643e93198be252e3f0fcf20356",
+      "kind": "technical-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/signal-hub/docs/sdd/01-event-model-and-ingest.md",
+      "blob": "12bd39e1b41fee63113a77bb6796cf6e96fe0e02",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/signal-hub/docs/sdd/02-storage-and-retention.md",
+      "blob": "b644321202cf09a7163ab6f999fc9aabdc034fc6",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/signal-hub/docs/sdd/03-metric-rules.md",
+      "blob": "494ca7584b52c8690c97e9514b46508f390c58ce",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/signal-hub/docs/sdd/04-subscriptions-and-delivery.md",
+      "blob": "81acf65808cb715a2941f764889579fb9f31a1df",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/signal-hub/docs/sdd/05-board-and-api.md",
+      "blob": "a33002ed7bf8244feba918483034f3c1bde18a45",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/signal-hub/docs/sdd/06-security-operations-acceptance.md",
+      "blob": "54910655b7faa1120f83bd4eba21e886f93c916c",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "platform/spring-pool/docs/SDD.md",
+      "blob": "c8c08eb15e0b82458d4d921448d79e1d4eb7f396",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/goku/cli/docs/PRD.md",
+      "blob": "cd3b3e2254a6f30867e47b9708e884bdc12d3381",
+      "kind": "product-requirements",
+      "mirrors": [
+        {
+          "repo": "fallrising/goku",
+          "commit": "e8f9f966e34f062fa591e9a929067e6069acf945",
+          "path": "docs/PRD.md",
+          "blob": "cd3b3e2254a6f30867e47b9708e884bdc12d3381"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/goku/fe-review/DESIGN.md",
+      "blob": "8e35d9c73b387a35fbdf0f57ccaae245b6218af3",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/SDD.md",
+      "blob": "b7109a195b37296a307896a943075fbf56bc5747",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/acceptance-persistence-schema.md",
+      "blob": "e6e176b1e1b7c59244b718e90f92f57b65a971dd",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/accepted-spec-admission.md",
+      "blob": "b3346983ba07d61dbbd3e69b937f945898372d16",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/completion-preparation.md",
+      "blob": "78f08e4ca00188a488a3a9a42f9f766ad17a9a49",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/connected-local-runtime.md",
+      "blob": "7518baad9a1cc590f33ed862bbb637cad1fe121e",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/current-specification-inputs.md",
+      "blob": "8f8d6053af0b505448f36c1b6b0a213828dcb7e9",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/decision-attention-ledger.md",
+      "blob": "f7a3db7a57b9dda11966c1cdc9bb144dc1e640f4",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/domain-and-gates.md",
+      "blob": "1f9c901c00af0400e8da0015acd8078390d1af09",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/durable-proposal-command.md",
+      "blob": "73c17ba3e527baaab33dd806fe6ef477e70848e2",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/executor-and-security.md",
+      "blob": "ce1ad05e5f5190b6e8a9f792d5e432fea0617308",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/fake-vertical-slice-implementation.md",
+      "blob": "dd1a5302dd7dd0ec1f51f13bef9d0a26200809df",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/initial-specification-command.md",
+      "blob": "494f663a957fc800c47030dc57fe108f205d2432",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/kanzo-inspired-usability.md",
+      "blob": "864af0824231a7f93c41794fe1c302df84093dbc",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/local-fake-runtime.md",
+      "blob": "2115062b2d91c01e1c6b40ec6cd295169d1db368",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/local-project-policy.md",
+      "blob": "d4d2c010f5004aaefc5b221c450b0a8b159f0ec7",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/ordered-migrations.md",
+      "blob": "3051b940bc04c45eac4820466fc4dd8b28f250d5",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/persistence-and-recovery.md",
+      "blob": "7e187af56bcdf9d2845cac7293cc36daabc1815a",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/persistent-fake-runtime.md",
+      "blob": "bf4032260f36a75e23e695399010ee70290a48ae",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/proposal-import-core.md",
+      "blob": "7913952125dff60c5308b6649a2bab0c72be2ae0",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/reconciliation.md",
+      "blob": "e17a7f54166126be59b4a0ee9c645dfc32ebed66",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/reopen-work-item.md",
+      "blob": "2119425364e6f36edbbfbdd31ae6550980d662a1",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/rework-loop.md",
+      "blob": "c72a1f7a9b9d2aeb3c12b0e997ac7192926e870b",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/run-output-provenance.md",
+      "blob": "8dcff2f42e9009c2b6d7ad09a9d14328b38b213f",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/runtime-integrity-predecessors.md",
+      "blob": "c825f5a56588bc60add615d118710e2810935365",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/session-control-room.md",
+      "blob": "46b6696edf28c7456446bd9de5d26993ddd78168",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/ui-interaction.md",
+      "blob": "39b2e56c9c8d48c9302658eb9865dbb6306ec695",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/verified-coverage.md",
+      "blob": "0a21db14131babd0ee52d728654fe2acb551e634",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/work-item-detail.md",
+      "blob": "c0d55a89ca50a72dc863f369ba7d701626c022ff",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/docs/sdd/work-item-material-index.md",
+      "blob": "dc485ef663a7adf931c72e8c5958eafc435f7a7f",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/hai-taskboard/fe-review/DESIGN.md",
+      "blob": "d2ff97375dbb6513aea6a197a7059ae55d212fa5",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/history-atlas/SDD.md",
+      "blob": "851b8394aadbda9583688228c9d0539fbbd3d119",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/DESIGN.md",
+      "blob": "31e684511d60fec1fc08ed4876ecab805ee371a2",
+      "kind": "technical-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/SDD.md",
+      "blob": "e16d5df19db5925b5916ed5f22f0445a523f9ebe",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/sdd/00-purpose.md",
+      "blob": "a260107c029595e87d60ba9644307de7486f9fa9",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/sdd/01-user-stories.md",
+      "blob": "f3d9b7bf42c685b9e2a214f0da5601f4e64a053d",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/sdd/02-invariants.md",
+      "blob": "6dd43f897c48fee9d71353dcc575ff4f2998ffd9",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/sdd/03-data-model.md",
+      "blob": "0c3e8ef3b26f954176252d4c13b5e88474fdc98c",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/sdd/04-protocol.md",
+      "blob": "024619ce78fd52b6b5675d1327154bb0ab57efe3",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/sdd/05-attention.md",
+      "blob": "d5763d6a018e33870961ffa5a2af1c771798d4df",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/sdd/06-verification.md",
+      "blob": "c4d760b3bc52ceb17e1a135de49928a19c3be166",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/sdd/07-roadmap.md",
+      "blob": "9f431a37a134a6a606de1ca180e3492fce700b4b",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/sdd/08-decisions-sources.md",
+      "blob": "9a48ef188cbafff4681cba6eb3634914f1f903a9",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/sdd/09-human-chat-ui.md",
+      "blob": "6356c862108f9c584fb40ab42f3f3e229659687c",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/sdd/10-members-and-mention.md",
+      "blob": "18485b380f971ab93cd2872fc2d888c43d0b4a64",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/sdd/11-room-screen.md",
+      "blob": "02fb7303f6ad92bd1489a881339c6556b670714c",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/v2/00-overview.md",
+      "blob": "5cb1cbbf21a978a67b2ce4655cf3b68201004d12",
+      "kind": "design-chapter"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/v2/01-domain.md",
+      "blob": "f5c3913e5eb8619127e92db2aadfbf628fcf59d8",
+      "kind": "design-chapter"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/v2/02-user-journeys.md",
+      "blob": "02da5d169743403ec130df25bf6f1e0209a939ac",
+      "kind": "design-chapter"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/v2/03-agent-runtime.md",
+      "blob": "ced15fbe97226432087243752adc13a7c83e6271",
+      "kind": "design-chapter"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/v2/04-backend.md",
+      "blob": "473518bb94a5f8decd5b26b8fe5f77a5257daedf",
+      "kind": "design-chapter"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/v2/05-frontend-architecture.md",
+      "blob": "2078c6d11155401ba794e66ad1cbcf61a67b46eb",
+      "kind": "design-chapter"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/v2/06-ux.md",
+      "blob": "b1eff3a8d6934996d048c28fc86521f3667a9d74",
+      "kind": "design-chapter"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/v2/07-visual-design.md",
+      "blob": "2740ce722cbe0066965d1398de6f6e32b773fd98",
+      "kind": "design-chapter"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/v2/08-testing-e2e.md",
+      "blob": "8f4732c4eabdbb479120325f2dc4ddc9d9664164",
+      "kind": "design-chapter"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/v2/09-roadmap.md",
+      "blob": "0be60663d254e76933459ff481dfc5626fb91b6d",
+      "kind": "design-chapter"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/v2/10-decisions.md",
+      "blob": "dcf15f078401cdb52a515ca07c08325261e2b0f8",
+      "kind": "design-chapter"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/docs/v2/11-visual-oracle.md",
+      "blob": "a5f5018dafaef0789f8c280701c684336c663eff",
+      "kind": "design-chapter"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/kith/fe-review/DESIGN.md",
+      "blob": "9131f29a5fedc1bfdb2d30cb5cbdba7c6023f178",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/ARCHITECTURE.md",
+      "blob": "d9c92eff4a4412d0a0b3dade9bf2f859e7ba35fd",
+      "kind": "technical-design",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/ARCHITECTURE.md",
+          "blob": "d9c92eff4a4412d0a0b3dade9bf2f859e7ba35fd"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/legacy-obechow/TECH_SPEC.md",
+      "blob": "f50b16f3269b5a6534a3e37d728356946ae51e0b",
+      "kind": "historical-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/obechow",
+          "commit": "e1300bcd081eb64082143761fb4308bcdd581f6f",
+          "path": "docs/TECH_SPEC.md",
+          "blob": "f50b16f3269b5a6534a3e37d728356946ae51e0b"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/legacy-obechow/sdd/P04-ci-cd.md",
+      "blob": "7edf297714eedece2aa6d745291d9bd8541de901",
+      "kind": "historical-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/obechow",
+          "commit": "e1300bcd081eb64082143761fb4308bcdd581f6f",
+          "path": "docs/sdd/P04-ci-cd.md",
+          "blob": "7edf297714eedece2aa6d745291d9bd8541de901"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/legacy-obechow/sdd/P05-vps-deployment-bundle.md",
+      "blob": "0ee69375256e90d4fe6beb9e423af1e0526f0a60",
+      "kind": "historical-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/obechow",
+          "commit": "e1300bcd081eb64082143761fb4308bcdd581f6f",
+          "path": "docs/sdd/P05-vps-deployment-bundle.md",
+          "blob": "0ee69375256e90d4fe6beb9e423af1e0526f0a60"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/legacy-obechow/sdd/P06-rollout-readiness.md",
+      "blob": "49fb479d0ce4826f1bb103d296db71a15ed9a4fb",
+      "kind": "historical-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/obechow",
+          "commit": "e1300bcd081eb64082143761fb4308bcdd581f6f",
+          "path": "docs/sdd/P06-rollout-readiness.md",
+          "blob": "49fb479d0ce4826f1bb103d296db71a15ed9a4fb"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/001-timeline-pagination/design.md",
+      "blob": "2a738880e2ef62a62e95efcbedee117312830676",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/001-timeline-pagination/design.md",
+          "blob": "2a738880e2ef62a62e95efcbedee117312830676"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/001-timeline-pagination/spec.md",
+      "blob": "ec0c18f04cae6f299d6f133a50882b1c0acbbc10",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/001-timeline-pagination/spec.md",
+          "blob": "ec0c18f04cae6f299d6f133a50882b1c0acbbc10"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/002-post-replies/design.md",
+      "blob": "98707fe82bd75b8f155a55ed0574dd2442d55575",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/002-post-replies/design.md",
+          "blob": "98707fe82bd75b8f155a55ed0574dd2442d55575"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/002-post-replies/spec.md",
+      "blob": "d835417e12f8a00b29f83c6c597423ba8fbd4051",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/002-post-replies/spec.md",
+          "blob": "d835417e12f8a00b29f83c6c597423ba8fbd4051"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/003-schema-migrations/design.md",
+      "blob": "5830a6c25bd3acd89901a568a5a9f1b22ecefe46",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/003-schema-migrations/design.md",
+          "blob": "5830a6c25bd3acd89901a568a5a9f1b22ecefe46"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/003-schema-migrations/spec.md",
+      "blob": "da725e10225723530d9979081cc2027b01900b6a",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/003-schema-migrations/spec.md",
+          "blob": "da725e10225723530d9979081cc2027b01900b6a"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/004-consistent-api-errors/design.md",
+      "blob": "08ba72238116d35f1be5ed4654c93406ef471191",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/004-consistent-api-errors/design.md",
+          "blob": "08ba72238116d35f1be5ed4654c93406ef471191"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/004-consistent-api-errors/spec.md",
+      "blob": "f859513330423937c78c78b2b18b291e8626392d",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/004-consistent-api-errors/spec.md",
+          "blob": "f859513330423937c78c78b2b18b291e8626392d"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/005-accounts-profiles/design.md",
+      "blob": "3751c35f19188f7b52f0ee7a56d8f33450dacaba",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/005-accounts-profiles/design.md",
+          "blob": "3751c35f19188f7b52f0ee7a56d8f33450dacaba"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/005-accounts-profiles/spec.md",
+      "blob": "f9a4dc6eff5ab50a279c6c610270bf77f80b1a72",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/005-accounts-profiles/spec.md",
+          "blob": "f9a4dc6eff5ab50a279c6c610270bf77f80b1a72"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/006-post-likes/design.md",
+      "blob": "c25b6de3b2a5b69c71df32ea8f0c0ca4fca43068",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/006-post-likes/design.md",
+          "blob": "c25b6de3b2a5b69c71df32ea8f0c0ca4fca43068"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/006-post-likes/spec.md",
+      "blob": "f992b4707a3b52e4012ff9c50394bbd317aa1dab",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/006-post-likes/spec.md",
+          "blob": "f992b4707a3b52e4012ff9c50394bbd317aa1dab"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/007-post-reposts/design.md",
+      "blob": "14bcac27231cd46369d4dd464fb9b7131172881d",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/007-post-reposts/design.md",
+          "blob": "14bcac27231cd46369d4dd464fb9b7131172881d"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/007-post-reposts/spec.md",
+      "blob": "4a4aef1be9c8ce9ea552941335ef225e46180861",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/007-post-reposts/spec.md",
+          "blob": "4a4aef1be9c8ce9ea552941335ef225e46180861"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/008-notifications/design.md",
+      "blob": "719a98a82350ebb79ae9964bfd6d8a51092e8b00",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/008-notifications/design.md",
+          "blob": "719a98a82350ebb79ae9964bfd6d8a51092e8b00"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/008-notifications/spec.md",
+      "blob": "6d9554504cabdc11951adc283eb2acb38fb48f08",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/008-notifications/spec.md",
+          "blob": "6d9554504cabdc11951adc283eb2acb38fb48f08"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/009-search/design.md",
+      "blob": "59de3d7b1b40ce106efdfaadc206bb7bc62815cb",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/009-search/design.md",
+          "blob": "59de3d7b1b40ce106efdfaadc206bb7bc62815cb"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/009-search/spec.md",
+      "blob": "a4d39db22c638e48c3bcf169f7ce91f05046ccf0",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/009-search/spec.md",
+          "blob": "a4d39db22c638e48c3bcf169f7ce91f05046ccf0"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/010-media-attachments/design.md",
+      "blob": "446e52dd99ff09660095bfa7f357dc7b561a1e68",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/010-media-attachments/design.md",
+          "blob": "446e52dd99ff09660095bfa7f357dc7b561a1e68"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/010-media-attachments/spec.md",
+      "blob": "90e7271600ebaf682e88ea06a487465a1313215f",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/010-media-attachments/spec.md",
+          "blob": "90e7271600ebaf682e88ea06a487465a1313215f"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/011-moderation-abuse-controls/design.md",
+      "blob": "1f0cf8216b74eb9e554d50b12b0baa9e37b68e2c",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/011-moderation-abuse-controls/design.md",
+          "blob": "1f0cf8216b74eb9e554d50b12b0baa9e37b68e2c"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/docs/specs/011-moderation-abuse-controls/spec.md",
+      "blob": "acaf510746fc81dde5435ceb0b30a2667f443840",
+      "kind": "feature-specification",
+      "mirrors": [
+        {
+          "repo": "fallrising/phark",
+          "commit": "6c48b9b2570009a4f6f4f257f91c75f1c98bc565",
+          "path": "docs/specs/011-moderation-abuse-controls/spec.md",
+          "blob": "acaf510746fc81dde5435ceb0b30a2667f443840"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "products/phark/fe-review/DESIGN.md",
+      "blob": "ac48820a75051659ee0ba6689433ff3684f98b99",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "specs/fleet/docs/SDD.md",
+      "blob": "69ef30699e6dfd4794063431a20e301adfbabad9",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "specs/fleet/fe-review/DESIGN.md",
+      "blob": "0983dfbaf9c069e445c7297962172a231bc9f396",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/agent-secrets/docs/SDD.md",
+      "blob": "8f05bf449f102fd595a2f1ace878cd568af350f3",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/clarkq/TECHNICAL_DESIGN.md",
+      "blob": "b8bb32a47f5f3bfba42b032cc730a698a25deb32",
+      "kind": "technical-design",
+      "mirrors": [
+        {
+          "repo": "fallrising/clarkQ",
+          "commit": "4058e500e3a94159308864e2ea24037640f86bc4",
+          "path": "TECHNICAL_DESIGN.md",
+          "blob": "b8bb32a47f5f3bfba42b032cc730a698a25deb32"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/clarkq/fe-review/DESIGN.md",
+      "blob": "379edbce8625efe256f0d8e45427c7f92753ce3e",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/mkfk/SDD-enhanced-csr.md",
+      "blob": "a46aafac9efd318e48dae7444b1718c43c5fbb67",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/mkfk/SDD.md",
+      "blob": "0650067060d15b9d406f382ae819253ee5b0d22d",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/mkfk/docs/architecture.md",
+      "blob": "05d3dc0a8188fb6b303e4a366cac12f8a03ca8cc",
+      "kind": "technical-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/mkfk/docs/sdd/01-storage.md",
+      "blob": "c9831f573212d60cea8e69d77dd5b923420c5e03",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/mkfk/docs/sdd/02-replication.md",
+      "blob": "021544a0fd5fcabfa2a0975170e890f0866be3f8",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/mkfk/docs/sdd/03-protocol-clients.md",
+      "blob": "cf703e9b172c512df4ccaae98078696a5485f37d",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/mkfk/docs/sdd/04-validation.md",
+      "blob": "2d2e1711cf8b2354cf0ca3c15b6e0242208c43ff",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/mkfk/docs/sdd/05-roadmap.md",
+      "blob": "77c827b0ff6eb7b38661f788a46649c975dd872c",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/mkfk/docs/sdd/06-decisions-sources.md",
+      "blob": "88ee60c7e3df33df5df91221b8f7ddc41230b711",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/ojbquay/SDD.md",
+      "blob": "31c6dbac0a874d8e37fbec760f4ef4155164333f",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/ojbquay/docs/messaging-semantics.md",
+      "blob": "78a41f1c48f62e39c7d3369a86e2199ce5a97962",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/ojbquay/docs/product-spec.md",
+      "blob": "34bbbcf397435feb0e5f06fa97896821a33fa8f6",
+      "kind": "technical-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/ojbquay/docs/reset-outcome-safety.md",
+      "blob": "4746d9d9de3f14be7719f955717c2f2b4565a87c",
+      "kind": "design-contract"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/ojbquay/fe-review/DESIGN.md",
+      "blob": "8467f3b7bf78c76f409c939e714c53a86ae46943",
+      "kind": "interface-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/snail/docs/design.md",
+      "blob": "076daab04faea95eb8c2635433cb459ee45ae5d6",
+      "kind": "technical-design"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/wotar/secure-mqtt-e2ee/docs/architecture.md",
+      "blob": "18536ca75b193365def084a3e81cd048fa4cf712",
+      "kind": "technical-design",
+      "mirrors": [
+        {
+          "repo": "fallrising/wotar",
+          "commit": "b1d237e70480e8ca17ace35541b6a50ebebb7022",
+          "path": "secure-mqtt-e2ee/docs/architecture.md",
+          "blob": "18536ca75b193365def084a3e81cd048fa4cf712"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/wotar/secure-mqtt-e2ee/docs/cloud-key-provider-design.md",
+      "blob": "0a389f2b15f6d2d79a7baf8bc608326610040c18",
+      "kind": "technical-design",
+      "mirrors": [
+        {
+          "repo": "fallrising/wotar",
+          "commit": "b1d237e70480e8ca17ace35541b6a50ebebb7022",
+          "path": "secure-mqtt-e2ee/docs/cloud-key-provider-design.md",
+          "blob": "0a389f2b15f6d2d79a7baf8bc608326610040c18"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/wotar/secure-mqtt-e2ee/docs/requirements.md",
+      "blob": "6ba99aa6669c8823921f321ffad4188322a600a9",
+      "kind": "requirements",
+      "mirrors": [
+        {
+          "repo": "fallrising/wotar",
+          "commit": "b1d237e70480e8ca17ace35541b6a50ebebb7022",
+          "path": "secure-mqtt-e2ee/docs/requirements.md",
+          "blob": "6ba99aa6669c8823921f321ffad4188322a600a9"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "systems/wotar/secure-mqtt-e2ee/docs/self-managed-key-design.md",
+      "blob": "dd2cd5d42dc73ab6ae9c336b27756138e6e1d7dc",
+      "kind": "technical-design",
+      "mirrors": [
+        {
+          "repo": "fallrising/wotar",
+          "commit": "b1d237e70480e8ca17ace35541b6a50ebebb7022",
+          "path": "secure-mqtt-e2ee/docs/self-managed-key-design.md",
+          "blob": "dd2cd5d42dc73ab6ae9c336b27756138e6e1d7dc"
+        }
+      ]
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "tools/gameplay-pattern-catalog/SDD.md",
+      "blob": "8c2601987fa2a5f1524948efd6417cdeffefc7cc",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/newclear",
+      "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b",
+      "path": "tools/motion-prompt/SDD.md",
+      "blob": "8501ae4e455f6cda025d8e5ae97e366a361e8438",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/ojbquay",
+      "commit": "2fe3c9d6042027050a598353d2cac55866aaccde",
+      "path": "docs/messaging-semantics.md",
+      "blob": "b7a44960bc8339a87bb41afea5342e69d0eab931",
+      "kind": "design-contract",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "systems/ojbquay/docs/messaging-semantics.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/ojbquay",
+      "commit": "2fe3c9d6042027050a598353d2cac55866aaccde",
+      "path": "docs/product-spec.md",
+      "blob": "bab69c0e585d84bc89754c49fa610a1253937bf4",
+      "kind": "technical-design",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "systems/ojbquay/docs/product-spec.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/snail",
+      "commit": "93ba9537262f4ddb1027469437e031b7c1fafef5",
+      "path": "docs/design.md",
+      "blob": "53cb7448cb261287306fe779fb5b0ac39f035eb8",
+      "kind": "technical-design",
+      "lineage": "historical",
+      "successor": {
+        "repo": "fallrising/newclear",
+        "path": "systems/snail/docs/design.md",
+        "commit": "30a5bc3c212cd912b8c507200ca041c50fc5744b"
+      }
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/distributed-lab/prd.md",
+      "blob": "8d6b134ae318fc93172a3cd1013e963840c83e4e",
+      "kind": "product-requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/distributed-lab/requirements/experience.md",
+      "blob": "432ac805555787fa10c8f9696e756eb09528991a",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/distributed-lab/requirements/quality.md",
+      "blob": "9631e0ee8324a7ce68bd6b3465bf03e79b8dabd9",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/distributed-lab/requirements/rules.md",
+      "blob": "b051540812538d5905f93b22a73a5f26f53e50b8",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/distributed-lab/sdd.md",
+      "blob": "b968540f8f18775f8d08353308f30a1de135bef4",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/factory-resilience/prd.md",
+      "blob": "1a995320cf4607caed07b11aeb606def17ad11b2",
+      "kind": "product-requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/factory-resilience/requirements/experience.md",
+      "blob": "b7b7c07b79f26dc3bdd81561fc1f5d5f6acbe30e",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/factory-resilience/requirements/quality.md",
+      "blob": "cdc694140c97dc56eb4ad23cfe1502c7c557867a",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/factory-resilience/requirements/rules.md",
+      "blob": "81a1de5904ae981a0f3b8d211336742e4e9fb1d0",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/factory-resilience/sdd.md",
+      "blob": "e68fa9aa3f21f049af924dae7cd2b3b09f27bb1b",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/mmo-economy/prd.md",
+      "blob": "5aea6361f812ab656eb0ad1c8e5fc78532014164",
+      "kind": "product-requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/mmo-economy/requirements/economy.md",
+      "blob": "b559694fa7d8555a1bc1e480103f0c864cf18b28",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/mmo-economy/requirements/experience.md",
+      "blob": "93d3e0c517349519280b2df470b50d59d58e9752",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/mmo-economy/requirements/quality.md",
+      "blob": "ee9065772b7a65b937375952dadb551b77cde92f",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/mmo-economy/sdd.md",
+      "blob": "16946aeac7e8b71b770dc529921715f850810217",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/orbital-lab/prd.md",
+      "blob": "5c8415aac3bd6a771a74d432f17a982a6b28bc61",
+      "kind": "product-requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/orbital-lab/requirements/experience.md",
+      "blob": "afcb65ae7ba6c4ad0762a8b8013619827f4150f7",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/orbital-lab/requirements/quality.md",
+      "blob": "2d047b921d4a72c553883398273448b4b24aa7af",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/orbital-lab/requirements/rules.md",
+      "blob": "0d8b1a1bde71c7917f8467e811890f273146f4db",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/orbital-lab/sdd.md",
+      "blob": "52665c755d463e0fb6a1e1b976f46fbcb4fafb01",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/sanguo-cards/prd.md",
+      "blob": "6733ab1e0683d0542499f21b92f162d5fc4c50f8",
+      "kind": "product-requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/sanguo-cards/requirements/ai.md",
+      "blob": "6b47badc6ea4daec581c1f8ccecc5d3fe69e8e1a",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/sanguo-cards/requirements/cards.md",
+      "blob": "ebe0179d42d025f228993c30540f303cec0d949e",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/sanguo-cards/requirements/modes.md",
+      "blob": "792adcca7cfe9b4cd420a4d8f490243582d96c5d",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/sanguo-cards/requirements/presentation.md",
+      "blob": "be946d764fb7713b2041f55def2d3d4a8772a3d6",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/sanguo-cards/requirements/quality.md",
+      "blob": "bc5bb106cc04908cf797f44a601bc6b349be04af",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/sanguo-cards/requirements/rules.md",
+      "blob": "1ee03e52fd64295a76ef4e4e18c776d0816c4784",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/solvable-mystery/prd.md",
+      "blob": "ef2152ba76ab1b370793091192985ad1a2ddbb45",
+      "kind": "product-requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/solvable-mystery/requirements/experience.md",
+      "blob": "0d5b03500d4f9120882fc595322c1505bbd478f5",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/solvable-mystery/requirements/quality.md",
+      "blob": "2ed0ee0ecb860ade5b964782ab4a3afb933c4775",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/solvable-mystery/requirements/rules.md",
+      "blob": "f1a00abebd2340af7b01b8a43f33beed1d9d59b2",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/solvable-mystery/sdd.md",
+      "blob": "f1431dd2f6b564b5d2bb1af177e3d1c213c98982",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/space-salvage/prd.md",
+      "blob": "cfd884cfb0ca8692b651d4ad2845ed3bfc149119",
+      "kind": "product-requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/space-salvage/requirements/experience.md",
+      "blob": "bddbff4122a8dc2c19856f0aaa9628b6c09c83a7",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/space-salvage/requirements/quality.md",
+      "blob": "4398fdf58c76b39bad9603c35f50cfdbb2e34e1d",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/space-salvage/requirements/rules.md",
+      "blob": "46f93db5b1d787571bfcd704253675c9a6254ade",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/space-salvage/sdd.md",
+      "blob": "4ed74417048bd25c2f763d7cea4ecafd28f67f4c",
+      "kind": "sdd"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/spellcraft/prd.md",
+      "blob": "384f97de80af78fca0f59c947985254060e7d1c8",
+      "kind": "product-requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/spellcraft/requirements/experience.md",
+      "blob": "8751b3989af42ca95fed956640b7e8aa58f34cfb",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/spellcraft/requirements/quality.md",
+      "blob": "7b48e877ea3ad6e918e211369720624dcdedd3b8",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/spellcraft/requirements/rules.md",
+      "blob": "25c492c0f5717ce60cbe0f194297ce90753eb1e7",
+      "kind": "requirements"
+    },
+    {
+      "repo": "fallrising/specs",
+      "commit": "1bea9352af2c72b82e9e303c503182928314df59",
+      "path": "products/spellcraft/sdd.md",
+      "blob": "77a117281a0bd3f6f6a9bf39963c38d3f6ba19b0",
+      "kind": "sdd"
+    }
+  ]
+}
