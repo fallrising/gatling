@@ -1,0 +1,31 @@
+{
+  "run_id": "001-handoff-01",
+  "case_id": "001-handoff",
+  "plan": "plans/001-handoff.md",
+  "source_sha": "5a0b06d635900001f3d473400cc5b4b9299ab838",
+  "branch": "lab/001-handoff-01",
+  "owner": "codex-handoff-agent",
+  "status": "running",
+  "updated_at": "2026-11-21T07:03:55+00:00",
+  "conditions": {
+    "variable": "透過 repo 入口提示與文件接手",
+    "fixed": [
+      "pending_ids",
+      "Python 3 標準函式庫",
+      "計畫四組 unittest",
+      "Draft PR 人審"
+    ],
+    "tools": [
+      "Codex 子代理",
+      "Git",
+      "Python 3.12.14"
+    ],
+    "environment": "雲端 Linux；全新 clone，非實際手機新對話",
+    "extra_task_details": [],
+    "context_limitations": "由主代理指派 repo 與交付範圍；平台提供既有背景。未用舊對話補足題意，但不算嚴格無歷史手機樣本。"
+  },
+  "evidence": [],
+  "outcome": null,
+  "human_decision": null,
+  "next_prompt": null
+}
