@@ -1,0 +1,48 @@
+# review-01 rerun, repo root /home/user/gatling, read head 4736dfbcce545602b8540b8e0e100057f5b6907f (main)
+$ python3 --version
+Python 3.13.18
+
+$ python3 -m unittest discover -s runs/001-handoff-02 -p 'test_*.py' -v
+test_all_done (test_solution.PendingIdsTest.test_all_done) ... ok
+test_empty_planned (test_solution.PendingIdsTest.test_empty_planned) ... ok
+test_exact_case_sensitive_match (test_solution.PendingIdsTest.test_exact_case_sensitive_match) ... ok
+test_first_seen_order_dedup_and_extra_done (test_solution.PendingIdsTest.test_first_seen_order_dedup_and_extra_done) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+exit_code=0
+
+$ python3 review_check_cases.py  (independent script, not committed; source below)
+case 1: planned=['C', 'A', 'C', 'B'] done=['A', 'Z'] expected=['C', 'B'] actual=['C', 'B'] inputs_unchanged=True PASS
+case 2: planned=[] done=['Z'] expected=[] actual=[] inputs_unchanged=True PASS
+case 3: planned=['K', 'k'] done=['K', 'K'] expected=['k'] actual=['k'] inputs_unchanged=True PASS
+case 4: planned=['X'] done=['X'] expected=[] actual=[] inputs_unchanged=True PASS
+4/4 passed
+exit_code=0
+
+--- review_check_cases.py ---
+"""Independent check: call runs/001-handoff-02/solution.py with the four plan cases."""
+import importlib.util
+import sys
+
+spec = importlib.util.spec_from_file_location("solution", "runs/001-handoff-02/solution.py")
+mod = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(mod)
+
+CASES = [
+    (["C", "A", "C", "B"], ["A", "Z"], ["C", "B"]),
+    ([], ["Z"], []),
+    (["K", "k"], ["K", "K"], ["k"]),
+    (["X"], ["X"], []),
+]
+failed = 0
+for i, (planned, done, expected) in enumerate(CASES, 1):
+    p, d = list(planned), list(done)
+    actual = mod.pending_ids(p, d)
+    ok = actual == expected and type(actual) is list and p == planned and d == done
+    failed += not ok
+    print(f"case {i}: planned={planned!r} done={done!r} expected={expected!r} actual={actual!r} inputs_unchanged={p == planned and d == done} {'PASS' if ok else 'FAIL'}")
+print(f"{len(CASES) - failed}/{len(CASES)} passed")
+sys.exit(1 if failed else 0)
