@@ -5,8 +5,8 @@
   "source_sha": "5a0b06d635900001f3d473400cc5b4b9299ab838",
   "branch": "lab/001-handoff-01",
   "owner": "codex-handoff-agent",
-  "status": "running",
-  "updated_at": "2026-11-21T07:03:55+00:00",
+  "status": "in_review",
+  "updated_at": "2026-11-21T07:04:54+00:00",
   "conditions": {
     "variable": "透過 repo 入口提示與文件接手",
     "fixed": [
@@ -24,8 +24,24 @@
     "extra_task_details": [],
     "context_limitations": "由主代理指派 repo 與交付範圍；平台提供既有背景。未用舊對話補足題意，但不算嚴格無歷史手機樣本。"
   },
-  "evidence": [],
-  "outcome": null,
-  "human_decision": null,
-  "next_prompt": null
+  "evidence": [
+    {
+      "paths": [
+        "runs/001-handoff-01/solution.py",
+        "runs/001-handoff-01/test_solution.py",
+        "runs/001-handoff-01/test-output.txt"
+      ],
+      "command": "python3 -m unittest discover -s runs/001-handoff-01 -p 'test_*.py' -v",
+      "exit_code": 0,
+      "summary": "四組 unittest 各自通過（4/4）。"
+    }
+  ],
+  "outcome": {
+    "implementation": "passed",
+    "repository_task_details": "recovered_without_extra_task_details",
+    "strict_mobile_clean_context": "not_tested",
+    "reason": "工作目錄為全新 clone；小題與驗收全部從 repo 取得，未補題意；執行者不是由手機開啟的無歷史對話。"
+  },
+  "human_decision": "獨立複查後，由人決定是否另做嚴格手機無歷史樣本；不得把本次當成該樣本。",
+  "next_prompt": "runs/001-handoff-01/next.md"
 }
