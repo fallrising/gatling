@@ -5,14 +5,38 @@
   "source_sha": "a257e261383e54af181091b1bec0fbfaa382b896",
   "branch": "lab/002-pr-recovery-01",
   "owner": "codex-experiment-setup",
-  "status": "running",
-  "updated_at": "2026-11-22T16:54:11.161581+00:00",
+  "status": "handoff_ready",
+  "updated_at": "2026-11-22T16:54:43.547616+00:00",
   "conditions": {
     "issue": "https://github.com/fallrising/gatling/issues/11",
     "variable": "交接包是否包含 PR URL",
-    "arm_timeout_minutes": 15
+    "arm_timeout_minutes": 15,
+    "claim_commit": "12e15ab433f266e3b8768ddb0e2f083135b0d14e"
   },
-  "evidence": [],
+  "evidence": [
+    {
+      "phase": "setup",
+      "tested_head": "12e15ab433f266e3b8768ddb0e2f083135b0d14e",
+      "python": "3.13.5",
+      "command": "python3 -m unittest discover -s runs/001-handoff-03 -p 'test_*.py' -v",
+      "exit_code": 0,
+      "summary": "Ran 4 tests in 0.000s; OK",
+      "paths": [
+        "runs/001-handoff-03/test_solution.py"
+      ]
+    },
+    {
+      "phase": "setup",
+      "tested_head": "12e15ab433f266e3b8768ddb0e2f083135b0d14e",
+      "python": "3.13.5",
+      "command": "python3 tools/check_runs.py",
+      "exit_code": 0,
+      "summary": "四筆 run.json 均 ok",
+      "paths": [
+        "tools/check_runs.py"
+      ]
+    }
+  ],
   "outcome": {
     "A": null,
     "B": null
