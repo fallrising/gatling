@@ -5,8 +5,8 @@
   "source_sha": "9612e07ffa300bc99910a71cce975bc3cdde3f0c",
   "branch": "lab/001-handoff-03",
   "owner": "codex-current-conversation",
-  "status": "running",
-  "updated_at": "2026-11-22T14:03:47.046430+00:00",
+  "status": "in_review",
+  "updated_at": "2026-11-22T15:42:23.569632+00:00",
   "conditions": {
     "mode": "existing_conversation_workflow_walkthrough",
     "variable": "本次先走通流程，不作極簡入口的單一變因對照。",
@@ -15,7 +15,7 @@
       "Python 3 標準函式庫",
       "計畫四組輸入輸出"
     ],
-    "authorization": "人已明確改為目前對話執行，暫不使用手機；允許 Claude Code 技術審查、提交及合併 PR，不包含發布或框架擴充。",
+    "authorization": "僅限目前對話與 run 03 的實作及必要 acceptance 回填 PR：人已授權既有對話演練、Claude Code 唯讀技術審查、提交及合併；不推廣到未來對話，不含發布或框架擴充。",
     "context_limitations": [
       "本對話含準備計畫、PR #8 與前輪決定背景。",
       "已在準備工作讀取 runs/001-handoff-02/next-after-decision.md；不符合盲做及無歷史要求。",
@@ -31,11 +31,75 @@
       "Git",
       "GitHub connector"
     ],
-    "additional_assistance": []
+    "additional_assistance": [
+      {
+        "role": "read-only technical reviewer T-001",
+        "harness": "Claude Code 2.1.326",
+        "model": "claude-sonnet-5-5",
+        "effort": "medium",
+        "tools": [],
+        "permission_mode": "dontAsk",
+        "scope": "Bubblewrap repo 零可寫路徑；safe-mode、strict MCP、無工具、無再委派",
+        "calls": 1,
+        "timeout_seconds": 240,
+        "process_exit_code": 0,
+        "permission_denials": [],
+        "reported_list_cost_usd": 0.0825789,
+        "actual_billed_cost": "unknown",
+        "test_execution": "所有測試由主控執行；審查者只對照提供的內容與輸出。"
+      }
+    ],
+    "python_version": "3.13.5"
   },
-  "evidence": [],
+  "evidence": [
+    {
+      "phase": "red",
+      "command": "python3 -m unittest discover -s runs/001-handoff-03 -p 'test_*.py' -v",
+      "exit_code": 1,
+      "paths": [
+        "runs/001-handoff-03/test_solution.py"
+      ],
+      "summary": "實作前依規格建立四個測試；ModuleNotFoundError: No module named solution，預期的紅燈。"
+    },
+    {
+      "phase": "green",
+      "command": "python3 -m unittest discover -s runs/001-handoff-03 -p 'test_*.py' -v",
+      "exit_code": 0,
+      "paths": [
+        "runs/001-handoff-03/solution.py",
+        "runs/001-handoff-03/test_solution.py"
+      ],
+      "summary": "Ran 4 tests in 0.000s; OK。四組輸入輸出逐一驗證。"
+    },
+    {
+      "command": "python3 tools/check_runs.py",
+      "exit_code": 0,
+      "paths": [
+        "runs/001-handoff-03/run.json"
+      ],
+      "summary": "runs/001-handoff-01/run.json: ok; runs/001-handoff-02/run.json: ok; runs/001-handoff-03/run.json: ok。僅接收檢查器結果，未另行開啟其他 run。"
+    },
+    {
+      "command": "python3 -m unittest discover -s tools -v",
+      "exit_code": 0,
+      "paths": [
+        "tools/test_check_runs.py"
+      ],
+      "summary": "Ran 15 tests in 0.008s; OK。"
+    },
+    {
+      "command": "Claude Code T-001 static review via scoped launcher",
+      "exit_code": 0,
+      "paths": [
+        "runs/001-handoff-03/solution.py",
+        "runs/001-handoff-03/test_solution.py",
+        "runs/001-handoff-03/run.json"
+      ],
+      "summary": "程式與四個案例正確、非嚴格資格及授權範圍一致；REWORK：補 additional_assistance、check_runs 與 tools unittest 證據。主控已補齊並核對；未聲稱 Claude 再審或重跑測試。"
+    }
+  ],
   "outcome": {
-    "implementation": null,
+    "implementation": true,
     "workflow_walkthrough": null,
     "repo_only_handoff": false,
     "strict_mobile_no_history_sample": false,
@@ -46,11 +110,71 @@
         "observation": "scoped task start 拒絕不存在於基準的 runs/001-handoff-03 可寫路徑，退出碼 2。",
         "handling": "直接啟動的主控建立已授權檔案；新啟動 Claude 審查使用同一 task 的零 source/document 寫入範圍。",
         "follow_up": "啟動器如何支援新增 component 需另立維護任務，本輪不修改工具。"
+      },
+      {
+        "id": "G2",
+        "observation": "審查輸入的 run.json 尚未收齊實際執行的檢查與額外協助，因此 Claude 要求補件。",
+        "handling": "補齊後主控回讀比對，將送審資料完整性納入本次驗證。",
+        "follow_up": "後續任務先彙整已完成的證據，再送審；不在本輪新增框架。"
+      },
+      {
+        "id": "G3",
+        "observation": "Claude 回覆 STATUS: DONE，同時含 failed 與 RECOMMENDATION: REWORK；報告 validator 退出 1（格式不合）。",
+        "handling": "保留原始回覆，不把程序 exit 0 或 DONE 視為完成；逐項修正後由主控 evidence gate 決定。",
+        "follow_up": "後續委派可要求更嚴格的結構化輸出；本輪不改 provider 或 validator。"
       }
-    ]
+    ],
+    "claim": {
+      "commit": "b5b3373da0ae568c78c68859441e86ad5e1765d4",
+      "remote_readback": true
+    },
+    "review": {
+      "recommendation": "REWORK",
+      "findings": [
+        {
+          "id": "R1",
+          "finding": "additional_assistance 尚未登記審查",
+          "resolution": "已登記實際模型、工具限制、一次呼叫、結果與測試執行者。",
+          "status": "resolved_by_orchestrator"
+        },
+        {
+          "id": "R2",
+          "finding": "evidence 缺 check_runs 與 tools unittest 結果",
+          "resolution": "已補上實際命令、退出碼、摘要及路徑。",
+          "status": "resolved_by_orchestrator"
+        }
+      ],
+      "report_validation": {
+        "exit_code": 1,
+        "message": "Verification must contain entries formatted '- <evidence> — passed|failed|skipped'",
+        "status": "raw report does not satisfy DONE contract",
+        "handling": "原始回應保留，不接受其 DONE；只採用可核對的審查意見，由主控完成修正與證據稽核。"
+      },
+      "limitations": [
+        "審查者不能執行工具；引用的測試輸出由主控提供。",
+        "審查輸入未包含 runs/README.md；acceptance 回填規則另由主控讀取共用文件核對。"
+      ],
+      "raw_response_sha256": "a9a7010a94f27d4dcf9f221e2c5d98ea8c0756af6a0566eabe62a304baa31bc5",
+      "orchestrator_acceptance": "ACCEPT：R1/R2 已逐項核對修正，四個規格測試重跑通過，補件與原始輸出相符。原始報告格式失敗仍保留，不宣稱接受其 DONE。"
+    },
+    "evidence_gate": {
+      "decision": "ACCEPT_FOR_PR",
+      "passed": [
+        "原子認領與遠端回讀",
+        "四組固定測試",
+        "紀錄及工具檢查",
+        "Claude R1/R2 補件回讀",
+        "只修改授權範圍",
+        "來源與非嚴格資格保留"
+      ],
+      "limitations": [
+        "Claude 原始報告不符合 DONE 契約，未作為完成依據；技術意見已由主控逐項處理。",
+        "程式與流程演練不證明嚴格交接成功。"
+      ]
+    }
   },
   "human_decision": null,
-  "next_prompt": null,
+  "next_prompt": "runs/001-handoff-03/next.md",
   "work_scope": {
     "repository": "https://github.com/fallrising/gatling",
     "canonical": "/home/ckc/test/codex/repos/fallrising/gatling",
