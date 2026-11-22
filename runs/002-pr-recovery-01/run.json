@@ -1,0 +1,22 @@
+{
+  "run_id": "002-pr-recovery-01",
+  "case_id": "001-handoff",
+  "plan": "plans/002-pr-recovery.md",
+  "source_sha": "a257e261383e54af181091b1bec0fbfaa382b896",
+  "branch": "lab/002-pr-recovery-01",
+  "owner": "codex-experiment-setup",
+  "status": "running",
+  "updated_at": "2026-11-22T16:54:11.161581+00:00",
+  "conditions": {
+    "issue": "https://github.com/fallrising/gatling/issues/11",
+    "variable": "交接包是否包含 PR URL",
+    "arm_timeout_minutes": 15
+  },
+  "evidence": [],
+  "outcome": {
+    "A": null,
+    "B": null
+  },
+  "human_decision": null,
+  "next_prompt": "runs/002-pr-recovery-01/next.md"
+}
