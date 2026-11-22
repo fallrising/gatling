@@ -1,6 +1,6 @@
-# 入口提示：001-handoff-03
+# 執行入口：001-handoff-03 流程演練
 
-用手機開一個新的對話，平台允許時只掛載本 repo，貼下面那一句原文，不要補充說明。人已確認 run 03 的嚴格樣本條件沿用 run 02；啟動前，計畫與本入口提示須先經人審核並合併到 main。
+人已改為在目前對話先走通流程，暫不做手機操作；本輪是非嚴格樣本，不是極簡入口對照。以下保留單句入口供查詢或接續本 run；它不會自動開啟新實驗。新對話只有此句時，授權仍只到 Draft PR；目前對話另有人的明確提交及合併授權。
 
 ```text
 請用繁體中文接手 GitHub 的 fallrising/gatling，依 prompts/NEXT.md 執行，授權到 Draft PR，不要合併或發布。
@@ -8,11 +8,11 @@
 
 ## 本輪任務與來源
 
-請用繁體中文工作。這輪只做 `plans/001-handoff.md` 的 run `001-handoff-03`。只依入口提示與本 repo 文件工作，不使用其他 repo 或舊對話的資訊。
+請用繁體中文工作。這輪只做 `plans/001-handoff.md` 的 run `001-handoff-03`。本次沿用既有對話，必須記錄已存在的背景與額外協助，不宣稱無歷史或只依 repo 工作；實作仍以本 repo 的固定小題為準。
 
-先從最新 main 讀 `AGENTS.md`、`README.md`、`plans/001-handoff.md`、`runs/README.md` 與本檔 `prompts/NEXT.md`，並核對完整來源 commit SHA。若本次計畫與入口提示尚未合併到 main，只回報未滿足的啟動條件並停止，不自行認領。
+先從最新 main 讀 `AGENTS.md`、`README.md`、`plans/001-handoff.md`、`runs/README.md` 與本檔 `prompts/NEXT.md`，並核對完整來源 commit SHA。本次由人授權在同一工作分支更新方向與認領；接續時再讀本 run 分支最新紀錄，不改寫原始來源 SHA。
 
-本輪唯一變因是入口提示縮成一句。固定小題 `pending_ids`、角色、工具與驗收條件均與 run 02 相同，實作與驗收以計畫為準；不為了確認這些條件而開啟 run 02 產物。
+固定小題 `pending_ids` 與四組輸入輸出以計畫為準；本次加入 Claude Code 技術審查並沿用對話，不作單一變因比較，不為了比較而開啟 run 02 產物。記錄實際流程缺口，但不在本輪修訂共用框架。
 
 ## 盲做規則
 
@@ -52,4 +52,4 @@ python3 tools/check_runs.py
 - 本對話是否由手機開啟：能辨識就寫依據，不能就寫「未知」，不從入口提示推定裝置。
 - 可直接貼入下個手機新對話的單一任務提示全文，交代來源、執行條件及有沒有方向需要人決定，並提供 `next_prompt` 路徑。
 
-所有變更交人審，授權只到 Draft PR，不要合併或發布。各 run 交付後，該 run 的 `run.json.next_prompt` 是接續提示入口。
+所有變更交人審；只有單句入口時授權到 Draft PR，不要合併或發布。目前對話已有人的明確合併授權，可在驗證與審查完成後合併本次 PR；此授權不得推廣為未來對話的自動合併規則。交付後，該 run 的 `run.json.next_prompt` 是接續提示入口。合併後依 `runs/README.md` 在下一個 PR 回填本 run 的 acceptance，不動其他 run。

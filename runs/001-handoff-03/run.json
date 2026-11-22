@@ -1,0 +1,94 @@
+{
+  "run_id": "001-handoff-03",
+  "case_id": "001-handoff",
+  "plan": "plans/001-handoff.md",
+  "source_sha": "9612e07ffa300bc99910a71cce975bc3cdde3f0c",
+  "branch": "lab/001-handoff-03",
+  "owner": "codex-current-conversation",
+  "status": "running",
+  "updated_at": "2026-11-22T14:03:47.046430+00:00",
+  "conditions": {
+    "mode": "existing_conversation_workflow_walkthrough",
+    "variable": "本次先走通流程，不作極簡入口的單一變因對照。",
+    "fixed": [
+      "pending_ids 規格",
+      "Python 3 標準函式庫",
+      "計畫四組輸入輸出"
+    ],
+    "authorization": "人已明確改為目前對話執行，暫不使用手機；允許 Claude Code 技術審查、提交及合併 PR，不包含發布或框架擴充。",
+    "context_limitations": [
+      "本對話含準備計畫、PR #8 與前輪決定背景。",
+      "已在準備工作讀取 runs/001-handoff-02/next-after-decision.md；不符合盲做及無歷史要求。",
+      "共享工作區規則及工具背景已注入；不宣稱只靠本 repo 接手。"
+    ],
+    "mobile_started": "unknown",
+    "mobile_evidence": "沒有可驗證的用戶裝置訊號；已知沿用目前對話，非新對話。",
+    "agent_model": "unknown",
+    "agent_model_basis": "本機 harness 未提供可驗證的精確模型版本，不由角色名稱推定。",
+    "tools": [
+      "Codex tool harness",
+      "Python 3 standard library",
+      "Git",
+      "GitHub connector"
+    ],
+    "additional_assistance": []
+  },
+  "evidence": [],
+  "outcome": {
+    "implementation": null,
+    "workflow_walkthrough": null,
+    "repo_only_handoff": false,
+    "strict_mobile_no_history_sample": false,
+    "basis": "人改為既有對話流程演練；不能用程式測試通過推論嚴格交接成功。",
+    "process_gaps": [
+      {
+        "id": "G1",
+        "observation": "scoped task start 拒絕不存在於基準的 runs/001-handoff-03 可寫路徑，退出碼 2。",
+        "handling": "直接啟動的主控建立已授權檔案；新啟動 Claude 審查使用同一 task 的零 source/document 寫入範圍。",
+        "follow_up": "啟動器如何支援新增 component 需另立維護任務，本輪不修改工具。"
+      }
+    ]
+  },
+  "human_decision": null,
+  "next_prompt": null,
+  "work_scope": {
+    "repository": "https://github.com/fallrising/gatling",
+    "canonical": "/home/ckc/test/codex/repos/fallrising/gatling",
+    "worktree": "/home/ckc/test/codex/.worktrees/fallrising/gatling/run-001-handoff-03",
+    "allowed_source_paths": [
+      "runs/001-handoff-03/solution.py",
+      "runs/001-handoff-03/test_solution.py"
+    ],
+    "allowed_document_paths": [
+      "plans/001-handoff.md",
+      "prompts/NEXT.md",
+      "runs/001-handoff-03/run.json",
+      "runs/001-handoff-03/next.md"
+    ],
+    "excluded": [
+      "其他 run",
+      "tools/",
+      "cases/",
+      "AGENTS.md",
+      "框架 v2"
+    ],
+    "local_task_record": "/home/ckc/test/codex/agent-workspace/data/projects/gatling/tasks/run-001-handoff-03/task.json",
+    "local_temporary_outputs": "/home/ckc/test/codex/agent-workspace/data/projects/gatling/tasks/run-001-handoff-03/tmp",
+    "required_review_contract": "tmp/.team/tasks/T-001.md（Claude 唯讀任務契約，不提交 repo）",
+    "retained_outputs": [
+      "本 run 程式、測試、run.json、next.md 與必要計畫/入口更新，提交 GitHub PR。",
+      "本機 preserve/evidence/claude-review.json 與 claude-review.stderr：原始審查回應供查驗；PR 合併且摘要核對後可另行核對處置。"
+    ],
+    "review_budget": {
+      "calls": 1,
+      "timeout_seconds": 240,
+      "max_budget_usd": 2,
+      "answer_tokens": 1200,
+      "model": "claude-sonnet-5-5",
+      "effort": "medium",
+      "tools": [],
+      "delegation": false
+    },
+    "closeout": "pending"
+  }
+}
