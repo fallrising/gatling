@@ -1,6 +1,6 @@
 # 入口提示：001-handoff-03
 
-用手機開一個新的對話，平台允許時只掛載本 repo，貼下面那一句原文，不要補充說明。啟動前，先由人確認計畫中 run 03 的嚴格樣本條件，並將確認後的計畫與本入口提示合併到 main。
+用手機開一個新的對話，平台允許時只掛載本 repo，貼下面那一句原文，不要補充說明。人已確認 run 03 的嚴格樣本條件沿用 run 02；啟動前，計畫與本入口提示須先經人審核並合併到 main。
 
 ```text
 請用繁體中文接手 GitHub 的 fallrising/gatling，依 prompts/NEXT.md 執行，授權到 Draft PR，不要合併或發布。
@@ -10,7 +10,7 @@
 
 請用繁體中文工作。這輪只做 `plans/001-handoff.md` 的 run `001-handoff-03`。只依入口提示與本 repo 文件工作，不使用其他 repo 或舊對話的資訊。
 
-先從最新 main 讀 `AGENTS.md`、`README.md`、`plans/001-handoff.md`、`runs/README.md` 與本檔 `prompts/NEXT.md`，並核對完整來源 commit SHA。若 main 的計畫仍將 run 03 嚴格樣本條件標為待確認草案，或本次計畫與入口提示尚未合併到 main，只回報未滿足的啟動條件並停止，不自行決定或認領。
+先從最新 main 讀 `AGENTS.md`、`README.md`、`plans/001-handoff.md`、`runs/README.md` 與本檔 `prompts/NEXT.md`，並核對完整來源 commit SHA。若本次計畫與入口提示尚未合併到 main，只回報未滿足的啟動條件並停止，不自行認領。
 
 本輪唯一變因是入口提示縮成一句。固定小題 `pending_ids`、角色、工具與驗收條件均與 run 02 相同，實作與驗收以計畫為準；不為了確認這些條件而開啟 run 02 產物。
 
